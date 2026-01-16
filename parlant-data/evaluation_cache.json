@@ -1,0 +1,35 @@
+{
+  "guideline_evaluations_3.1.2": [
+    {
+      "id": "68b6a32155b41200c30ed6decb55f807",
+      "creation_utc": "2026-01-16T07:41:25.859977+00:00",
+      "version": "3.1.2",
+      "properties": {
+        "continuous": false,
+        "customer_dependent_action_data": {
+          "is_customer_dependent": false,
+          "customer_action": "",
+          "agent_action": ""
+        },
+        "agent_intention_condition": null,
+        "internal_action": null
+      }
+    },
+    {
+      "id": "1f20d2709ebeb0b05f218d5e706fcb9f",
+      "creation_utc": "2026-01-16T10:06:35.654585+00:00",
+      "version": "3.1.2",
+      "properties": {
+        "continuous": false,
+        "customer_dependent_action_data": {
+          "is_customer_dependent": false,
+          "customer_action": "",
+          "agent_action": ""
+        },
+        "agent_intention_condition": null,
+        "internal_action": null
+      }
+    }
+  ],
+  "journey_evaluations_3.1.2": []
+}

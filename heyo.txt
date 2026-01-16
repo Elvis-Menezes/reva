@@ -1,0 +1,2544 @@
+[
+  {
+    "chunk_id": "sales_001",
+    "topic": "Sales",
+    "questions": [
+      "What is Heyo?",
+      "What is HeyoPhone?",
+      "Product info",
+      "About Heyo",
+      "Tell me about Heyo",
+      "How does Heyo work?",
+      "Explain Heyo"
+    ],
+    "answer": "Heyo (also known as HeyoPhone) is a mobile app from MyOperator, designed for small businesses. It gives the business one virtual number to manage all their business calls and WhatsApp conversations directly from their mobile phones.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "sales_002",
+    "topic": "Sales",
+    "questions": [
+      "What are Heyo's core features?",
+      "What features does Heyo have?",
+      "How can I use Heyo in my business?",
+      "How can I use Heyo?"
+    ],
+    "answer": "The core features include multi-agent calling from a single number, unlimited calling, call recording, capability to run WABA campaigns and a shared WhatsApp inbox.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "sales_003",
+    "topic": "Sales - Recorded Demo",
+    "questions": [
+      "I want the video",
+      "Send me the video overview",
+      "Product video",
+      "Video",
+      "1",
+      "Video link",
+      "Show me the video",
+      "send me the video link",
+      "what is the 10 minute video?",
+      "send me the 10-minute video",
+      "I want the recorded demo",
+      "I can't make the live demo, is there a video?"
+    ],
+    "answer": "This is a great 10-minute recorded demo that covers all the features and basic setup steps. You can watch it here: https://www.youtube.com/watch?v=q8S3e0ZlNB8",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "sales_004",
+    "topic": "Sales - Book Live Demo",
+    "questions": [
+      "Schedule demo",
+      "Book a demo",
+      "Interactive demo",
+      "2",
+      "Speak to sales",
+      "how does the daily demo work?"
+    ],
+    "answer": "A live demo is the best way to get your specific questions answered by an expert. The demo is a group session held daily at 2 PM (Monday to Friday) where you can ask our specialist questions. Please note this is a Q&A session, not for one-on-one technical support. You can book your slot here: https://www.heyophone.com/heyo-daily-demo",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "sales_005",
+    "topic": "Sales",
+    "questions": [
+      "Yes KYC done",
+      "KYC is complete",
+      "I finished KYC",
+      "My KYC is approved"
+    ],
+    "answer": "That's great! Since your KYC is done, your number is active. The next logical step is setting up your WhatsApp Business (WABA) account, which lets you use the shared inbox.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "sales_006",
+    "topic": "Sales",
+    "questions": [
+      "No KYC",
+      "Still signing up",
+      "KYC in process",
+      "I need to do KYC",
+      "How to do KYC"
+    ],
+    "answer": "Completing your KYC is the most important next step, as it's what assigns your virtual number. You can do it right in the app. You can use either the GST method or the Aadhaar method. GST-based KYC is the fastest path to activation.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "sales_007",
+    "topic": "Sales",
+    "questions": [
+      "What is a virtual number?",
+      "Do I need a SIM for a virtual number?",
+      "How does virtual number work"
+    ],
+    "answer": "With Heyo, you get a virtual number, so no extra SIM card is needed. Your entire team can share this single number.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "sales_008",
+    "topic": "Sales",
+    "questions": [
+      "How does call recording work?",
+      "How long are calls stored?",
+      "Are calls recorded?"
+    ],
+    "answer": "All business calls on your Heyo number are automatically recorded and stored securely for 6 months.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "sales_009",
+    "topic": "Sales",
+    "questions": [
+      "I am confused about the SIM",
+      "Do I need a SIM or not?",
+      "Virtual number vs SIM card",
+      "How does calling work without a SIM?"
+    ],
+    "answer": "Here’s how it works:\n1. Heyo gives you a **virtual number** (your business identity).\n2. The Heyo app uses your phone's *physical* SIM card and its active calling plan to make the actual outbound call.\nSo, you use your personal SIM for the calling balance, but your customer *only* sees your Heyo virtual number.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "sales_010",
+    "topic": "Sales",
+    "questions": [
+      "IVR",
+      "Custom greeting",
+      "Press 1 for sales",
+      "Phone menu",
+      "Welcome message",
+      "Automated greeting",
+      "Do you guys have an IVR feature?",
+      "Tell me about your IVR",
+      "How does the IVR menu work?",
+      "What is IVR?",
+      "Does Heyo have IVR?"
+    ],
+    "answer": "You can set a custom audio Greeting or Welcome Message for all callers. The Pro Plan also includes IVR (Interactive Voice Response), which allows callers to press '1' or '2' to be routed to specific departments, like Sales or Support, that the Admin can configure.\n\nWe also have a short video guide on setting it up, you can watch it here: https://www.youtube.com/watch?v=XRDIB4Hxbe4",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "sales_011",
+    "topic": "Sales",
+    "questions": [
+      "Unlimited calling",
+      "How does unlimited calling work?",
+      "No per-minute charges",
+      "Per minute cost"
+    ],
+    "answer": "Yes, Heyo provides unlimited calling on both our Lite and Pro plans. This means there are no per-minute charges for any incoming or outgoing calls. Please note, this is for legitimate business use and not for spam or mass cold calling.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "sales_012",
+    "topic": "Sales",
+    "questions": [
+      "How many users?",
+      "How many staff?",
+      "Plan limits",
+      "Lite vs Pro users",
+      "Maximum users"
+    ],
+    "answer": "The Lite plan includes 2 users total (1 Admin + 1 Staff). The Pro plan includes 5 users total (1 Admin + 4 Staff). It is not possible to add more users beyond your specific plan's limit.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "sales_013",
+    "topic": "Sales",
+    "questions": [
+      "What does the customer see?",
+      "How do outbound calls work?",
+      "Staff caller ID",
+      "What number shows on caller ID?"
+    ],
+    "answer": "When you make calls from the Dialer tab in the Heyo app, the customer's Caller ID will show your business's virtual number, not your personal number. This keeps your personal number private.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "sales_014",
+    "topic": "Sales",
+    "questions": [
+      "What does the customer hear?",
+      "How do inbound calls work?",
+      "Call routing"
+    ],
+    "answer": "When a customer dials your Heyo number, they first hear your custom greeting. If you have the Pro plan, they'll then hear your IVR menu. The call then rings each staff member's phone sequentially (one by one) for 20-25 seconds until it's answered.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "sales_015",
+    "topic": "Sales",
+    "questions": [
+      "Use case",
+      "Example",
+      "How a business uses Heyo",
+      "Example of Heyo"
+    ],
+    "answer": "For example, a travel company with 3 agents would use the Pro Plan, which supports 1 Admin + 4 Staff. They get one virtual number that all customers see for both calls and WhatsApp. All their calls are recorded, and they can use the IVR to route calls to 'Sales' or 'Bookings.'",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "sales_016",
+    "topic": "Sales",
+    "questions": [
+      "How to start?",
+      "How do I sign up?",
+      "What is the sign up process?",
+      "User journey",
+      "Getting started"
+    ],
+    "answer": "The process is simple!\n1. Install the app and sign up.\n2. Choose your STD code and complete your KYC (this assigns your virtual number).\n3. Make your payment to activate a plan.\n4. Configure your WhatsApp and Truecaller.\n\nWe have a full video guide on this here: https://www.youtube.com/watch?v=q8S3e0ZlNB8",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "sales_017",
+    "topic": "Sales",
+    "questions": [
+      "Can I sign up on website?",
+      "Desktop signup",
+      "Signup on web",
+      "Create account on computer"
+    ],
+    "answer": "Heyo accounts can only be created and used through the mobile app (Android/iOS). The website is for information only and does not support account creation.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "sales_018",
+    "topic": "Sales",
+    "questions": [
+      "Sign up process",
+      "Registered mobile number",
+      "Who is the admin?"
+    ],
+    "answer": "You just sign up with your personal mobile number and an OTP. This number becomes your 'Registered MobileNumber,' and you become the Admin of the Heyo Business Account.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "sales_019",
+    "topic": "Sales",
+    "questions": [
+      "Can I choose my number?",
+      "I want a specific number",
+      "Vanity number",
+      "Select STD code",
+      "Choose phone number"
+    ],
+    "answer": "During signup, you can choose your preferred STD code prefix (like 011 for Delhi, 022 for Mumbai, 080 for Bangalore). The specific phone number is then assigned automatically by the system after KYC and cannot be chosen.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "sales_020",
+    "topic": "Sales",
+    "questions": [
+      "Can I use my existing number?",
+      "Can I port my number?",
+      "Port-in",
+      "MNP",
+      "Mobile number portability"
+    ],
+    "answer": "No, it is not possible to port-in or use your existing mobile number. Heyo provides you with a new virtual number that is permanently tied to your account.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "sales_021",
+    "topic": "Sales",
+    "questions": [
+      "Why can't I port my number?",
+      "Reason for no port-in",
+      "MNP clarification"
+    ],
+    "answer": "Port-in (MNP) is not supported because Heyo provides a new *virtual number* that is deeply integrated with our app's technology, including the call recording, shared WhatsApp, and team inbox. This is a different system than a regular SIM, so it doesn't allow for porting.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "sales_022",
+    "topic": "Sales",
+    "questions": [
+      "Lite plan",
+      "Heyo lite",
+      "300 plan",
+      "Pricing",
+      "Heyo pricing",
+      "What is the price?",
+      "Cost",
+      "300 rupee plan",
+      "How much does the Lite plan cost?"
+    ],
+    "answer": "The Heyo Lite Plan is ₹300 per month (plus GST). It includes 1 Admin and 1 Staff member, unlimited calls, a welcome message, and the WhatsApp Business (WABA) setup.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "sales_023",
+    "topic": "Sales",
+    "questions": [
+      "Pro plan",
+      "Heyo pro",
+      "600 plan",
+      "Pricing",
+      "IVR plan",
+      "Heyo pricing",
+      "What is the price?",
+      "Cost",
+      "600 rupee plan",
+      "How much does the Pro plan cost?"
+    ],
+    "answer": "The Heyo Pro Plan is ₹600 per month (plus GST). It includes 1 Admin and 4 Staff members, all the features of the Lite plan, plus a 2-department IVR menu.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "sales_024",
+    "topic": "Sales",
+    "questions": [
+      "Compare plans",
+      "Lite vs Pro",
+      "What is the difference between plans?",
+      "Pricing",
+      "Heyo pricing",
+      "Plan difference"
+    ],
+    "answer": "The main difference is the number of users and the IVR:\n* **Lite plan:** 2 users total (1 Admin + 1 Staff).\n* **Pro plan:** 5 users total (1 Admin + 4 Staff) and also adds the 2-department IVR menu.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "sales_025",
+    "topic": "Sales",
+    "questions": [
+      "Why should I buy pro?",
+      "Is pro plan worth it?",
+      "Value of pro plan",
+      "Pro vs lite value"
+    ],
+    "answer": "The Lite plan is perfect for a solo owner or a team of two. The main reason to upgrade to Pro is if you have a larger team (up to 5 users total) or if you want to sound more professional with an IVR menu, like 'Press 1 for Sales, Press 2 for Support.'",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "sales_026",
+    "topic": "Sales",
+    "questions": [
+      "What is MyOperator?",
+      "Heyo vs MyOperator",
+      "Is Heyo part of MyOperator?",
+      "MyOperator"
+    ],
+    "answer": "MyOperator is our parent company and provides our enterprise-level solution for larger businesses that need desktop apps, complex call center features, and APIs. Heyo is our mobile-first app, designed specifically to be simple and powerful for small business owners and teams who work on the go.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "sales_027",
+    "topic": "Sales",
+    "questions": [
+      "Free trial",
+      "3-day free trial",
+      "Trial expired",
+      "Trial deactivation",
+      "What happens after trial?",
+      "Grace period",
+      "Do I get a free trial?"
+    ],
+    "answer": "New users get a 3-day free trial. You must purchase a plan within 3 days *after* the trial ends (which is a 3-day grace period). On the 7th day after your KYC (3-day trial + 3-day grace), any unpaid number is permanently suspended and cannot be recovered.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "sales_028",
+    "topic": "Sales",
+    "questions": [
+      "What is the price next year?",
+      "Future pricing",
+      "Price increase"
+    ],
+    "answer": "It's not possible to provide exact prices for future years, as they may be influenced by inflation (5–10%) and new features. We always aim to offer competitive rates.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "sales_029",
+    "topic": "Sales",
+    "questions": [
+      "Download link",
+      "Where to download?",
+      "App store",
+      "Play store",
+      "Heyo app link"
+    ],
+    "answer": "You can download the app from the app stores.\nFor iOS: https://apps.apple.com/in/app/heyo-business-phone-number/id6468649761\nFor Android: https://play.google.com/store/apps/details?id=com.heyophone",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "sales_030",
+    "topic": "Sales",
+    "questions": [
+      "What is signup?",
+      "Registration process"
+    ],
+    "answer": "This is the process where you enter your personal mobile number and verify an OTP to create a Heyo account. This mobile number then becomes your 'Registered Number.'",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "sales_031",
+    "topic": "Sales",
+    "questions": [
+      "What is a registered number?",
+      "Admin login",
+      "Unique identifier"
+    ],
+    "answer": "The 'Registered Number' is the personal mobile number you used to sign up. It acts as your unique account identifier and is what grants you Admin privileges.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "sales_032",
+    "topic": "Sales",
+    "questions": [
+      "What is a login number?",
+      "Staff login"
+    ],
+    "answer": "A 'Login Number' is the number assigned to a staff member by the Admin. The staff member must use this specific number to log into their Heyo app. This is typically the staff's personal mobile number.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "sales_033",
+    "topic": "Sales",
+    "questions": [
+      "What is interaction team?",
+      "Definition of customer/lead"
+    ],
+    "answer": "The 'Customer Interaction Team' is your internal team (Admin and staff) managing communications. 'Customers' or 'Leads' are the external individuals they interact with.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "sales_034",
+    "topic": "Sales",
+    "questions": [
+      "How many accounts can I create?",
+      "Account limit",
+      "3 account limit",
+      "Same KYC",
+      "Same credentials"
+    ],
+    "answer": "You can create up to 3 Heyo accounts using the same KYC document (Aadhaar/GST). However, each of these 3 accounts must be registered with a different mobile number.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "sales_035",
+    "topic": "Sales",
+    "questions": [
+      "How does referral work?",
+      "300 credits",
+      "Referral reward",
+      "Friend signed up"
+    ],
+    "answer": "To receive the 300 referral credits, two things must happen: 1. Your friend must install the app using your unique link. 2. You receive the credits only after your friend makes their first call. (No reward is given if your friend signs up with a number already registered with Heyo).",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "sales_036",
+    "topic": "Sales",
+    "questions": [
+      "What can I do?",
+      "Allowed use",
+      "Dos"
+    ],
+    "answer": "You should use Heyo to respond to customer queries on Calls & WhatsApp, call & WhatsApp customers for their needs, and engage customers with WhatsApp campaigns.\n\nWe also have a video on the 'Do's and Don'ts' here: https://www.youtube.com/watch?v=mpv7QKMTQQY",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "sales_037",
+    "topic": "Sales",
+    "questions": [
+      "What am I not allowed?",
+      "Rules",
+      "Donts",
+      "Spam",
+      "Cold calling"
+    ],
+    "answer": "You must not use Heyo to cold call or spam potential customers, or for any pranks, scams, or non-business activities.\n\nThis video explains the rules in detail: https://www.youtube.com/watch?v=mpv7QKMTQQY",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "sales_038",
+    "topic": "Sales",
+    "questions": [
+      "TRAI regulations",
+      "Legal",
+      "Compliance",
+      "Consent"
+    ],
+    "answer": "In compliance with TRAI regulations, Heyo must not be used for unsolicited cold calling, which includes marketing calls for lead generation. You must have proper consent before contacting individuals.\n\nWe have a video on this here: https://www.youtube.com/watch?v=BsozWkCxrus",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "sales_039",
+    "topic": "Sales",
+    "questions": [
+      "Prohibited industries",
+      "What businesses are not allowed?",
+      "Loan business"
+    ],
+    "answer": "Heyo cannot be used for: Financial services like loans or recovery, unauthorized medicines, unauthorized job services, tobacco, weapons, adult content, or anything else that is illegal in India.\n\nThis is covered in our 'Do's and Don'ts' video: https://www.youtube.com/watch?v=mpv7QKMTQQY",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "sales_040",
+    "topic": "Sales",
+    "questions": [
+      "Is Heyo legal?",
+      "Is my number on TRAI?",
+      "TRAI registration",
+      "Corporate number"
+    ],
+    "answer": "Yes, absolutely. Heyo is fully compliant with all TRAI regulations. The reason it's not listed under your name on the TRAI portal is that this portal is only for individual (personal) numbers. Heyo provides a corporate (business) number, which follows a different set of TRAI compliance rules.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "sales_041",
+    "topic": "Sales",
+    "questions": [
+      "WhatsApp policy",
+      "WhatsApp rules"
+    ],
+    "answer": "All WhatsApp usage must also comply with the official WhatsApp policy, which you can read here: https://business.whatsapp.com/policy.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "sales_042",
+    "topic": "Sales",
+    "questions": [
+      "I need a desktop app",
+      "I need a web version",
+      "When will you have a laptop app?",
+      "Is there a computer version?",
+      "Desktop version",
+      "Web app"
+    ],
+    "answer": "Heyo is a mobile-only app and does not have web or desktop access. For web access and more customized plans, we recommend exploring our parent company, MyOperator, which you can learn about here: https://myoperator.com/india-pricing",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "sales_043",
+    "topic": "Sales",
+    "questions": [
+      "I need an API",
+      "I need CRM",
+      "API key",
+      "CRM integration",
+      "Connect to CRM"
+    ],
+    "answer": "Heyo does not provide an API key or support CRM integrations as it is designed for simplicity. For these advanced features, we recommend exploring our parent product, MyOperator, which you can learn about here: https://myoperator.com/india-pricing",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "sales_044",
+    "topic": "Sales",
+    "questions": [
+      "I need WABA reports",
+      "WABA link tracking",
+      "I need a WABA bot",
+      "I need WABA API key",
+      "I need WABA automation",
+      "WABA chatbot"
+    ],
+    "answer": "The Heyo platform is designed for direct team communication, so it only includes campaign-based reports and does not support advanced features like unified reports, link tracking in templates, bots, automations, or direct API key access. For a powerful WABA solution with all those features, our enterprise product, MyOperator, would be the right fit. You can learn about it here: https://myoperator.com/india-pricing",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "sales_045",
+    "topic": "Sales",
+    "questions": [
+      "Do you have toll-free numbers?",
+      "1800 number"
+    ],
+    "answer": "No, Heyo does not currently offer toll-free (1800) numbers. For those, you would need our enterprise product, MyOperator. You can learn about it here: https://myoperator.com/india-pricing",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "sales_046",
+    "topic": "Sales",
+    "questions": [
+      "I need call conferencing",
+      "How to do 3-way calling?",
+      "Conference call feature"
+    ],
+    "answer": "Call conferencing is not a feature on the Heyo app, which is designed for one-on-one business conversations. For advanced features like 3-way calling, you would need our enterprise product, MyOperator. You can learn about it here: https://myoperator.com/india-pricing",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "sales_047",
+    "topic": "Sales",
+    "questions": [
+      "I need business hours",
+      "How to set out-of-office?",
+      "Close for the day",
+      "Non-working hours",
+      "Opening hours"
+    ],
+    "answer": "Setting 'business hours' or an 'out-of-office' mode is not a feature on the Heyo app, as it's designed to be active 24/7. This is a common request for our enterprise product, MyOperator, which does support it. You can learn about it here: https://myoperator.com/india-pricing",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "sales_048",
+    "topic": "Sales",
+    "questions": [
+      "Can I add notes?",
+      "Add reminders",
+      "CRM feature",
+      "Notes on contacts"
+    ],
+    "answer": "Currently, the Heyo app does not have a feature to add notes or reminders to calls or contacts. This is a feature available in our enterprise product, MyOperator. You can learn about it here: https://myoperator.com/india-pricing",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "sales_049",
+    "topic": "Sales",
+    "questions": [
+      "International calling",
+      "Can I call USA?",
+      "Call outside India",
+      "Outbound international calls"
+    ],
+    "answer": "Heyo can only be used for domestic calls across all regions within India. It does not support international calling. For that, you would need our enterprise product, MyOperator. You can learn about it here: https://myoperator.com/india-pricing",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "sales_050",
+    "topic": "Sales",
+    "questions": [
+      "I need parallel calling",
+      "I need all phones to ring at once",
+      "Simultaneous ring",
+      "How to enable parallel calling?",
+      "Parallel ring",
+      "Ring all staff at once",
+      "Ring multiple phones"
+    ],
+    "answer": "Heyo is designed for 'Sequential' or 'Uniform' (one-by-one) routing to ensure every call is tracked to a specific staff member. Parallel ringing (ringing all staff at once) is not a feature. Our enterprise product, MyOperator, can be configured for simultaneous ringing. You can learn about it here: https://myoperator.com/india-pricing",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "sales_051",
+    "topic": "Sales",
+    "questions": [
+      "I need more than 5 staff",
+      "10 users",
+      "Bigger plan",
+      "Larger team",
+      "I need 6 users",
+      "What about a discount for a team of 20 users?",
+      "What if I have 20 users?",
+      "What is the maximum number of users?"
+    ],
+    "answer": "The Pro Plan supports a maximum of 5 staff members. For larger teams, more departments, or more channel lines, we recommend exploring our parent company, MyOperator, which you can learn about here: https://myoperator.com/india-pricing",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_001",
+    "topic": "How-To",
+    "questions": [
+      "How to add staff?",
+      "How do I add staff?",
+      "Add a user",
+      "Add staff",
+      "Add agent",
+      "Learn staff addition",
+      "Learn how to add users"
+    ],
+    "answer": "The Admin can invite staff from the 'Manage Staff' section in the app. The Lite plan includes 2 users total (1 Admin + 1 Staff), and the Pro plan includes 5 users total (1 Admin + 4 Staff).",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_002",
+    "topic": "How-To",
+    "questions": [
+      "What is the process to add staff?",
+      "Help with the process of adding staff",
+      "How to add staff process"
+    ],
+    "answer": "Here's the process: 1. The Admin goes to 'Settings' → 'Call & Staff' → 'Manage Staff' and taps 'Invite Staff' to add their number. 2. The Staff member must then install the Heyo app on their own phone and log in using that exact number.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_003",
+    "topic": "How-To",
+    "questions": [
+      "Help with the plan for staff",
+      "Which plan do I need for my team?",
+      "Staff plan choice"
+    ],
+    "answer": "The Lite plan is perfect for a team of two (1 Admin + 1 Staff). If your team is 3 to 5 people (1 Admin + up to 4 Staff), you will need the Pro plan.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_004",
+    "topic": "How-To",
+    "questions": [
+      "How to setup WhatsApp?",
+      "How do I setup WABA?",
+      "WhatsApp setup",
+      "Activate WhatsApp",
+      "WABA setup guide",
+      "Learn WABA",
+      "Learn WhatsApp"
+    ],
+    "answer": "To set up the WhatsApp Business API (WABA) feature, you must first purchase a plan, as WABA setup is not available on the free trial. Once you have a paid plan, the setup option will become available.\n\nWe have a video guide on this here: https://www.youtube.com/watch?v=iEpi8R9lmq0",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_005",
+    "topic": "How-To",
+    "questions": [
+      "I have purchased a plan, how do I setup WABA?",
+      "I am ready to setup WhatsApp, what are the steps?",
+      "How to setup WABA"
+    ],
+    "answer": "To start, tap the 'WhatsApp' icon on the main screen of your app. I also recommend our 10-minute recorded demo which walks you through the entire Meta setup process. You can watch it here: https://www.youtube.com/watch?v=q8S3e0ZlNB8",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_006",
+    "topic": "How-To",
+    "questions": [
+      "I have not purchased a plan, how do I buy one?",
+      "I am on trial, how to purchase?",
+      "How to buy a plan to get WABA?"
+    ],
+    "answer": "You can purchase a plan right in the app. Just go to 'Settings' and then 'Plans & Invoice' to select the plan that works for you. Once you've paid, the WABA setup option will become available.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_007",
+    "topic": "How-To",
+    "questions": [
+      "What is Heyo WhatsApp?",
+      "What is WABA?",
+      "Shared inbox",
+      "WhatsApp campaigns",
+      "WhatsApp API",
+      "How does Heyo WhatsApp work?"
+    ],
+    "answer": "Heyo configures a WhatsApp Business API (WABA) account on your virtual number. This gives your team a shared inbox to manage all customer chats and allows you to send bulk campaigns.\n\nHere is an introductory video on our WABA features: https://www.youtube.com/watch?v=iEpi8R9lmq0",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_008",
+    "topic": "How-To",
+    "questions": [
+      "I need help with WABA templates",
+      "I need a pro-tip for templates",
+      "WABA pro-tip"
+    ],
+    "answer": "We have a 'Pro-Tip' guide for WABA templates. It explains Meta's rules and gives examples for templates that get approved quickly. You can check it out here: https://wa.me/91XXXXXXXXXX?text=PROTIPS_WABA\n\nWe also have a video guide on creating templates: https://www.youtube.com/watch?v=BG876G_2LR4",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_009",
+    "topic": "How-To",
+    "questions": [
+      "What are the rules for WABA templates?",
+      "Template approval time"
+    ],
+    "answer": "You can find the template manager in the app. Remember to submit your templates for approval 1-2 days before you plan to run a campaign, as Meta's approval can take some time.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_010",
+    "topic": "How-To",
+    "questions": [
+      "What is the cost for WABA?",
+      "Is WABA free?",
+      "WABA cost"
+    ],
+    "answer": "Heyo's WhatsApp (WABA) setup is free with any paid plan. However, please note that Meta (WhatsApp) does charge per conversation.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_011",
+    "topic": "How-To",
+    "questions": [
+      "What are WABA charges?",
+      "Meta charges",
+      "WABA credits",
+      "What if I run out of credits?",
+      "Why did my messages fail?",
+      "WABA pricing",
+      "WhatsApp charges",
+      "Meta pricing",
+      "how much do whatsapp campaigns cost?",
+      "what is the price for whatsapp messages?"
+    ],
+    "answer": "WABA messaging charges (set by Meta) apply per conversation and are deducted from your Heyo Credits balance. If your credits are insufficient, your messages will fail.\n* **Marketing:** ≈ ₹0.86 (Effective Jan 1, 2026)\n* **Utility:** ≈ ₹0.12\n* **Service (customer replies):** Free for 24 hours.\n\nWe have a detailed video explaining WABA pricing here: https://www.youtube.com/watch?v=6ARc7vl28mU",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_012",
+    "topic": "How-To",
+    "questions": [
+      "Can I use WhatsApp Web?",
+      "Can I use regular WhatsApp?",
+      "WABA rule",
+      "WhatsApp QR code"
+    ],
+    "answer": "This is a key rule: The Heyo virtual number can **only** be used to create a WhatsApp Business API (WABA) account *from within the Heyo mobile app*. It cannot be used for a normal WhatsApp, a WhatsApp Business account, or via WhatsApp Web. This is what enables the shared team inbox.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_013",
+    "topic": "How-To",
+    "questions": [
+      "Can I use my existing WABA number?",
+      "I already have a WABA"
+    ],
+    "answer": "No, you cannot connect an existing WABA account. The Heyo platform works by setting up a *new* WABA account on the *new* virtual number we provide you. This is what allows our shared inbox feature to work for your team.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_014",
+    "topic": "How-To",
+    "questions": [
+      "What is an Admin?",
+      "What is a Staff?",
+      "Admin vs agent",
+      "User roles",
+      "Permissions",
+      "Admin vs Staff features"
+    ],
+    "answer": "The Admin is the one who sets up the account, manages billing, and has full rights. Staff are added by the Admin to handle calls and chats, but they have limited permissions (e.g., staff cannot manage billing or add other staff).",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_015",
+    "topic": "How-To",
+    "questions": [
+      "What can Admins do?",
+      "Admin permissions"
+    ],
+    "answer": "Admin-only actions include: Managing subscriptions, adding or removing staff, configuring the IVR, setting up WABA, creating campaigns, hiding call logs, editing the Business Card, viewing ratings, deleting the account, and downloading recordings.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_016",
+    "topic": "How-To",
+    "questions": [
+      "KYC method",
+      "Aadhaar vs GST KYC",
+      "Video KYC",
+      "KYC process"
+    ],
+    "answer": "After signing up, you must choose a KYC method. GST-based KYC is faster as it does not require a video verification. Aadhaar-based KYC requires an additional “Video KYC” step.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_017",
+    "topic": "How-To",
+    "questions": [
+      "When is KYC complete?",
+      "When is my number assigned?"
+    ],
+    "answer": "Once your KYC is complete and approved, your unique virtual number is assigned. You can use it immediately for making and receiving calls.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_018",
+    "topic": "How-To",
+    "questions": [
+      "Why is KYC mandatory?",
+      "Why do I need Aadhar?",
+      "KYC required"
+    ],
+    "answer": "KYC (using Aadhar or GST) is a mandatory requirement from the Government of India (TRAI) to obtain any virtual phone number. A number cannot be assigned until your KYC is complete.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_019",
+    "topic": "How-To",
+    "questions": [
+      "What is video KYC?",
+      "Aadhaar KYC step"
+    ],
+    "answer": "For Aadhaar-based KYC, there is an additional “Video KYC” step. You will be prompted to record a short video where you must clearly read the on-screen numbers. This requires good lighting and a stable internet connection.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_020",
+    "topic": "How-To",
+    "questions": [
+      "How to make a call?",
+      "How to use dialer?",
+      "Outbound call"
+    ],
+    "answer": "To make an outbound call, you must use the Dialer tab inside the Heyo app. When you call from the app, your customer will see your Heyo virtual number as the Caller ID, not your personal number.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_021",
+    "topic": "How-To",
+    "questions": [
+      "Calling conditions",
+      "What do I need for calls to work?",
+      "5 conditions for calling"
+    ],
+    "answer": "For calling to work, 5 conditions must be met: 1. The Heyo app must be installed. 2. Your SIM must have an active calling plan. 3. The SIM in your phone must match your assigned login number. 4. A stable (even low-speed) internet connection is needed to start outbound calls. 5. Only the Admin needs KYC.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_022",
+    "topic": "How-To",
+    "questions": [
+      "How to see customer number?",
+      "Unhide caller ID",
+      "Identify caller"
+    ],
+    "answer": "By default, incoming calls show your Heyo number. To see the actual customer's number, the Admin can go to 'Settings' → 'Identify Caller' and allow all permissions the app asks for.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_023",
+    "topic": "How-To",
+    "questions": [
+      "Identify caller still not working",
+      "Permissions on but no number"
+    ],
+    "answer": "If all permissions are enabled in the 'Identify Caller' setting but it's still not working, please try restarting your phone. If the issue continues after a restart, please let us know for escalation.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_024",
+    "topic": "How-To",
+    "questions": [
+      "What is my extension?",
+      "Staff extension",
+      "Find extension"
+    ],
+    "answer": "You can find the extension number for each staff member by going to 'Manage Staff' and tapping on the staff's name.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_025",
+    "topic": "How-To",
+    "questions": [
+      "How to add contacts?",
+      "Manage contacts"
+    ],
+    "answer": "You can add contacts to your Heyo account individually by saving them from your 'Call Logs' page or directly from a WhatsApp chat.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_026",
+    "topic": "How-To",
+    "questions": [
+      "How to bulk upload contacts?",
+      "CSV format for contacts",
+      "Campaign contacts"
+    ],
+    "answer": "Bulk upload is used only for running WABA campaigns. You'll need to format your .csv file with two columns: Name and Phone Number. The phone numbers should be consistent (e.g., all with +91 or all without it). The system does not support auto-populating variables from the CSV.\n\nHere is a video guide on running bulk campaigns: https://www.youtube.com/watch?v=rYl-dZ60Wyg",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_027",
+    "topic": "How-To",
+    "questions": [
+      "How to edit my business card?",
+      "What is business card?",
+      "Update business details"
+    ],
+    "answer": "The Business Card shows your company details to customers. As an Admin, you can edit this by going to 'Settings' → 'Business Card' and updating your information, such as your logo, address, and social links.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_028",
+    "topic": "How-To",
+    "questions": [
+      "How long are recordings stored?",
+      "Access old recordings"
+    ],
+    "answer": "Call recordings can be accessed in the app for up to 6 months from the date of the call.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_029",
+    "topic": "How-To",
+    "questions": [
+      "How to access call recordings?",
+      "Where are recordings?",
+      "Download recordings"
+    ],
+    "answer": "As an Admin, you can access, listen to, and download all call recordings directly from the 'Call Logs' page in the Heyo app. Staff can only see the logs but cannot download recordings.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_030",
+    "topic": "How-To",
+    "questions": [
+      "How to delete call recordings?",
+      "Remove a recording"
+    ],
+    "answer": "For compliance reasons, individual recordings cannot be permanently deleted, though they are auto-deleted after 6 months. However, as an Admin, you can hide specific call logs.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_031",
+    "topic": "How-To",
+    "questions": [
+      "How to hide call logs?",
+      "Can staff see logs?",
+      "Hide call logs from staff",
+      "Privacy",
+      "Admin hide calls",
+      "Can staff delete logs?",
+      "Tamper with logs"
+    ],
+    "answer": "Only the Admin can hide call recordings. To do so, go to 'Call Logs', long-press the specific call entry, and select 'Hide Call Recording.' Staff can see all logs *except* those the Admin has hidden. Staff members cannot delete or tamper with any logs or recordings.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_032",
+    "topic": "How-To",
+    "questions": [
+      "How to unhide call?",
+      "Where are hidden calls?",
+      "Unhide call log",
+      "View hidden calls"
+    ],
+    "answer": "This is an Admin-only feature. To see your hidden calls, go to the 'Call Logs' page and tap the 'Filter' icon (near 'Missed Calls'). Select the 'Hidden Call' filter. To unhide a log, long-press the hidden call entry, and select 'Unhide Call Recording'.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_033",
+    "topic": "How-To",
+    "questions": [
+      "How to delete a WhatsApp chat?",
+      "Remove chat history"
+    ],
+    "answer": "For compliance and team transparency, WhatsApp chats in the shared inbox cannot be permanently deleted by any user.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_034",
+    "topic": "How-To",
+    "questions": [
+      "Can I turn off call recording?",
+      "Disable recording",
+      "Stop recording calls"
+    ],
+    "answer": "No, call recording cannot be disabled. For business transparency and security, all calls made or received on the virtual number are recorded by default and are available for the Admin to review.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_035",
+    "topic": "How-To",
+    "questions": [
+      "How to set my availability?",
+      "Call availability",
+      "Stop receiving calls",
+      "Go unavailable"
+    ],
+    "answer": "To temporarily stop receiving calls, go to 'Settings' in the Heyo app, find the 'Availability' or 'Call Status' option, and toggle it to 'Unavailable.' Incoming calls will not ring until you set it back to 'Available.' This affects both 'Sequential' and 'Uniform' call routing.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_036",
+    "topic": "How-To",
+    "questions": [
+      "How to change greeting?",
+      "Update welcome message"
+    ],
+    "answer": "You can update your greeting by going to 'Settings' → 'Call & Staff' → 'Play Welcome Message & IVR'. From there, just enter your text, preview the audio by tapping the loudspeaker icon, and tap 'Update'.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_037",
+    "topic": "How-To",
+    "questions": [
+      "Greeting languages",
+      "Hinglish",
+      "Hindi greeting",
+      "Regional language greeting"
+    ],
+    "answer": "Yes, greeting messages can be set in English or Hinglish (typing Hindi with English letters). Using native scripts for other regional languages (like Hindi script) may cause pronunciation issues in the audio.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_038",
+    "topic": "How-To",
+    "questions": [
+      "How to setup IVR?",
+      "IVR menu",
+      "Pro plan feature",
+      "unable to setup IVR",
+      "I am unable to setup IVR",
+      "IVR setup is not working",
+      "IVR setup failed"
+    ],
+    "answer": "This is a Pro Plan feature. To set it up, go to 'Settings' → 'Call & Staff' → 'Play Welcome Message & IVR'. Then, toggle on 'Setup IVR', customize your two department names, and tap 'Update'.\n\nHere is a short video guide on how to do this: https://www.youtube.com/watch?v=XRDIB4Hxbe4",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_039",
+    "topic": "How-To",
+    "questions": [
+      "How do I assign staff to IVR?",
+      "IVR staff mapping",
+      "Assign staff to IVR",
+      "Staff department",
+      "Map staff to IVR"
+    ],
+    "answer": "To assign your staff to an IVR department, first go to 'Manage Staff' and then select the staff member's name. From there, you can assign or unassign them from the relevant departments.\n\nThis video shows the process: https://www.youtube.com/watch?v=XRDIB4Hxbe4",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_040",
+    "topic": "How-To",
+    "questions": [
+      "Call routing",
+      "Sequential call",
+      "Uniform call",
+      "Change call order"
+    ],
+    "answer": "You can change your call routing by going to 'Settings' → 'Call & Staff' → 'Manage Staff'. From there, you can choose:\n* **Sequential:** Rings in a fixed order (you can drag names to change the order).\n* **Uniform:** Routes calls based on staff availability and load.\nTap 'Update' when you're done.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_041",
+    "topic": "How-To",
+    "questions": [
+      "How to remove staff?",
+      "Delete user",
+      "Remove agent"
+    ],
+    "answer": "To remove a staff member, the Admin can go to 'Settings' → 'Call & Staff' → 'Manage Staff'. Choose the staff member you want to remove, then tap 'Remove' in the top-right corner, and confirm.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_042",
+    "topic": "How-To",
+    "questions": [
+      "Call transfer",
+      "How to transfer?",
+      "*2"
+    ],
+    "answer": "You can only transfer incoming calls. During a live call, you must press **\\*2** on your phone's **native** dialer (not the Heyo app dialer). When prompted, enter the staff's 2-digit extension number. For example, for extension 11, you would press **\\*211**.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_043",
+    "topic": "How-To",
+    "questions": [
+      "Steps to setup WABA",
+      "Activate WABA",
+      "WABA setup guide"
+    ],
+    "answer": "Here are the steps to activate WABA: 1. Tap the WhatsApp icon in the app. 2. Tap 'Continue to Facebook' & log in. 3. Enter your Business Name, Email, and a matching Website/Social URL. 4. Select 'Create a Business WhatsApp account.' 5. Enter your customer-facing display name. 6. Tap 'Continue' and 'Finish' to return to Heyo.\n\nHere is a video guide of the process: https://www.youtube.com/watch?v=iEpi8R9lmq0",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_044",
+    "topic": "How-To",
+    "questions": [
+      "WABA display name not showing",
+      "Why is my name not visible?",
+      "Customers only see my number",
+      "why is there no blue tick in my whatsapp",
+      "how to get blue tick on waba",
+      "what is the waba blue tick",
+      "how to get the whatsapp green tick",
+      "what is the blue tick"
+    ],
+    "answer": "If your display name isn't showing (and you don't have a 'blue tick'), it's because your account is still 'Unverified.' You must apply for a 'Verified Business Account' (which gives the blue tick) through your Meta Business Manager for your name to appear in chats.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_045",
+    "topic": "How-To",
+    "questions": [
+      "WABA messaging limits",
+      "How are WABA limits set?",
+      "How to increase WABA limits?",
+      "Message limit info"
+    ],
+    "answer": "Your WABA messaging limits (from 1k to 10k, 100k, and unlimited) are upgraded automatically by Meta based on your usage and quality rating. To get upgraded, you must message more unique users and maintain a high-quality rating (not getting blocked or reported as spam).",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_046",
+    "topic": "How-To",
+    "questions": [
+      "What can WABA do?",
+      "WABA features",
+      "Shared inbox",
+      "Multi-agent"
+    ],
+    "answer": "In Heyo, WABA gives you a shared inbox, multi-agent chat, bulk messaging (Admin only), and customizable templates. Please note that advanced bots, automations, and API key access are not supported on the Heyo platform.\n\nThis video gives a good overview: https://www.youtube.com/watch?v=iEpi8R9lmq0",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_047",
+    "topic": "How-To",
+    "questions": [
+      "What is a WABA conversation?",
+      "24 hour window",
+      "Session message",
+      "Marketing template charge"
+    ],
+    "answer": "A 'conversation' is a 24-hour window. Within this window, you can send free-form replies. After 24 hours of customer silence, you must send an approved template to re-initiate. Exception: Marketing templates are charged per message, even if sent within an open 24-hour window.\n\nThis is explained in our pricing video: https://www.youtube.com/watch?v=6ARc7vl28mU",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_048",
+    "topic": "How-To",
+    "questions": [
+      "How does shared inbox work?",
+      "Multi agent chat",
+      "Who owns the chat?"
+    ],
+    "answer": "The shared inbox allows all your users (Admin and Staff) to view and initiate chats. When a new message comes in, the first user to respond 'owns' that conversation.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_049",
+    "topic": "How-To",
+    "questions": [
+      "Check credits",
+      "Add credits",
+      "WABA balance",
+      "WABA usage",
+      "WABA credits management"
+    ],
+    "answer": "You can manage your WABA credits easily. Just go to 'Settings' → 'Plans and Invoices'. From there, tap 'Manage Credits' to add or check your balance, and tap 'WhatsApp Usage' to see your detailed spending.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_050",
+    "topic": "How-To",
+    "questions": [
+      "How to see template status?",
+      "Is my template approved?",
+      "Template pending status"
+    ],
+    "answer": "You can see the status of all your templates right in the app. Go to 'Settings' → 'WhatsApp' → 'Message Templates'. Next to each template, you will see its status (e.g., 'Pending', 'Approved', or 'Rejected').",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_051",
+    "topic": "How-To",
+    "questions": [
+      "How to create WABA template?",
+      "Message templates",
+      "Template approval time",
+      "how to make a whatsapp template with buttons?",
+      "how do I add variables to my whatsapp message?"
+    ],
+    "answer": "To create a template, go to 'Settings' → 'WhatsApp' → 'Message Templates' → 'Create Template'. Fill out the form and submit it. Just so you know, templates require Meta approval, which can take from 15 minutes to 12 hours.\n\nHere is a short video guide on creating templates: https://www.youtube.com/watch?v=BG876G_2LR4",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_052",
+    "topic": "How-To",
+    "questions": [
+      "How to edit WABA template?",
+      "Can I change my template?",
+      "Edit approved template"
+    ],
+    "answer": "This is a Meta policy. Once a WABA template is approved, it cannot be edited. If you need to make a change, you must submit a new template with your changes for approval. You can, however, delete a template you no longer use.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_053",
+    "topic": "How-To",
+    "questions": [
+      "How to delete WABA template?",
+      "Remove template"
+    ],
+    "answer": "Yes, you can delete a WABA template. Just go to 'Settings' → 'WhatsApp' → 'Message Templates'. Find the template you want to remove and you will see an option to delete it.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_054",
+    "topic": "How-To",
+    "questions": [
+      "How to create WABA campaign?",
+      "Bulk messaging",
+      "Admin only",
+      "how do I run a bulk whatsapp campaign?",
+      "how to send many messages at once on whatsapp?"
+    ],
+    "answer": "This is an Admin-only feature. To send a campaign, go to 'Settings' → 'WhatsApp' → 'Campaigns'. Then, choose an approved template and select your audience, either from your contacts or by uploading a file.\n\nThis video shows you how: https://www.youtube.com/watch?v=rYl-dZ60Wyg",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_055",
+    "topic": "How-To",
+    "questions": [
+      "How to delete WABA campaign?",
+      "Remove campaign history"
+    ],
+    "answer": "For historical and reporting reasons, old or sent WABA campaigns cannot be deleted from your campaign list.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_056",
+    "topic": "How-To",
+    "questions": [
+      "WABA marketing template limits",
+      "Meta template limits",
+      "Daily template limit"
+    ],
+    "answer": "Yes, Meta imposes daily limits on the number of marketing templates you can send to prevent spam. If you hit this limit, you must wait for the quota to reset. Utility and service templates are not restricted in this way.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_057",
+    "topic": "How-To",
+    "questions": [
+      "How to change WABA profile picture?",
+      "WABA display picture",
+      "Edit WABA details"
+    ],
+    "answer": "To change your WABA profile picture: 1. Open the Heyo app → 'Settings' → 'Edit Business Details'. 2. Scroll down and tap 'Edit WABA Details'. 3. Choose 'Display Picture' and upload your new image, then save.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_058",
+    "topic": "How-To",
+    "questions": [
+      "WABA on multiple devices",
+      "WABA QR code",
+      "WABA on computer"
+    ],
+    "answer": "Heyo's WABA is designed to work only through the Heyo app and cannot be used on other devices via a QR code (like the regular WhatsApp Business app). However, all your staff can access the shared inbox on their own phones by logging into their Heyo app.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_059",
+    "topic": "How-To",
+    "questions": [
+      "I need a general WABA guide",
+      "How to use WABA overview"
+    ],
+    "answer": "For a general overview, I recommend watching our 10-minute recorded demo which also covers WABA setup. The main features are the shared inbox for your team and the ability to send bulk campaigns (Admin-only). You can watch it here: https://www.youtube.com/watch?v=q8S3e0ZlNB8",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_060",
+    "topic": "How-To",
+    "questions": [
+      "I need help with WABA campaigns",
+      "Specific WABA help",
+      "WABA template ideas",
+      "Write my first template",
+      "Give me template examples"
+    ],
+    "answer": "I can help with that. For templates, a good 'Utility' one is: `Hi {{1}}, this is a follow-up on your query about {{2}}. Is there anything else I can help you with?` For campaigns, the Admin can go to 'Settings' → 'WhatsApp' → 'Campaigns' to start one.\n\nHere are videos on Templates (https://www.youtube.com/watch?v=BG876G_2LR4) and Campaigns (https://www.youtube.com/watch?v=rYl-dZ60Wyg).",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_061",
+    "topic": "How-To",
+    "questions": [
+      "Out of office workaround",
+      "What to do on holiday?",
+      "Business hours workaround"
+    ],
+    "answer": "While Heyo doesn't have an 'out-of-office' feature, here is a workaround: As an Admin, you can temporarily change your 'Welcome Message' (in 'Settings' → 'Call & Staff') to inform callers of your holiday hours or that you will return their call the next business day.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_062",
+    "topic": "How-To",
+    "questions": [
+      "Can I receive international calls?",
+      "Can customers call me from USA?",
+      "International inbound"
+    ],
+    "answer": "While you cannot make outbound international calls, your Heyo virtual number *can* receive calls from international numbers. Your customer will be able to dial your number (with the +91 prefix), and it will ring in your app as usual.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_063",
+    "topic": "How-To",
+    "questions": [
+      "How do I know I have a voicemail?",
+      "Voicemail alert",
+      "New voicemail"
+    ],
+    "answer": "When you receive a new voicemail, you will get a push notification from the Heyo app. You will also see a voicemail icon next to that call in your 'Call Logs' page. You can just tap that log entry to listen to the message.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_064",
+    "topic": "How-To",
+    "questions": [
+      "How to turn on voicemail?",
+      "How to disable voicemail?",
+      "Enable voicemail"
+    ],
+    "answer": "The voicemail feature is enabled by default on your account and cannot be disabled. Any call that is missed by your entire team will be given the option to leave a message.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_065",
+    "topic": "How-To",
+    "questions": [
+      "How to create wa.me link?",
+      "WhatsApp link",
+      "Click to chat link"
+    ],
+    "answer": "To create a 'wa.me' link, just use this format: https://wa.me/91[YourHeyoNumber]. For example, if your number is 08012345678, your link would be https://wa.me/918012345678. You can put this link on your website or in your email signature.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_066",
+    "topic": "How-To",
+    "questions": [
+      "How to block a number?",
+      "Block spammer",
+      "Block caller"
+    ],
+    "answer": "Because Heyo uses a single virtual number to handle all your calls, it's not possible to block a specific number from within the app, as that would risk blocking all your incoming business calls.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_067",
+    "topic": "How-To",
+    "questions": [
+      "Call forwarding",
+      "Forward calls to another number"
+    ],
+    "answer": "Heyo does not have a built-in call forwarding feature. While you can set up forwarding externally through your phone's native settings, this is not officially supported or tested and should be used at your own discretion.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_068",
+    "topic": "How-To",
+    "questions": [
+      "Shared contacts",
+      "Team contacts",
+      "Can staff see my contacts?"
+    ],
+    "answer": "No, Heyo does not currently support a shared contact directory. Contacts saved on an Admin's phone are not automatically visible to staff members, and vice-versa.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_069",
+    "topic": "How-To",
+    "questions": [
+      "Greeting pronunciation is bad",
+      "Robot voice sounds wrong",
+      "Hinglish name sounds bad"
+    ],
+    "answer": "The text-to-audio engine can sometimes struggle with unique names. Please try spelling the word phonetically (how it sounds) in the text box.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_070",
+    "topic": "How-To",
+    "questions": [
+      "I tried phonetic spelling, pronunciation still bad",
+      "Robot voice wrong"
+    ],
+    "answer": "I'm sorry the phonetic spelling didn't help. This is a limitation of the current text-to-audio engine. For now, you may need to try a different spelling or word.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_071",
+    "topic": "How-To",
+    "questions": [
+      "What is phonetic spelling?",
+      "How to spell phonetically"
+    ],
+    "answer": "For example, if your name is 'Siobhan' and it's being said wrong, you could try typing 'Shiv-on' or 'Sha-vawn' into the greeting box. Playing with the spelling like that often fixes it.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_072",
+    "topic": "How-To",
+    "questions": [
+      "Can I upload a voice note?",
+      "Use my own audio",
+      "Pre-recorded greeting"
+    ],
+    "answer": "You cannot upload a pre-recorded voice note as your greeting. The message must be created by typing text into the app, which Heyo then converts to audio.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_073",
+    "topic": "How-To",
+    "questions": [
+      "How long is greeting?",
+      "Greeting character limit",
+      "Welcome message length"
+    ],
+    "answer": "The text for your greeting message can be up to 180 characters long.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "howto_074",
+    "topic": "How-To",
+    "questions": [
+      "How to pay?",
+      "Make payment",
+      "Where to pay?"
+    ],
+    "answer": "You can complete your subscription payment inside the Heyo app in the 'Plans & Invoice' section.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_001",
+    "topic": "Support",
+    "questions": [
+      "Where is my refund?",
+      "Refund not received",
+      "How long for refund?",
+      "Refund status"
+    ],
+    "answer": "Refunds (such as for a payment that didn't reflect) typically take about 6-7 working days. If it has been *more* than 7 working days, please provide your registered mobile number and payment details so I can escalate this. If it is still within the 7-day window, please wait for it to be processed.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_002",
+    "topic": "Support",
+    "questions": [
+      "My payment is not reflecting",
+      "Payment successful but not updated",
+      "Validity not extended"
+    ],
+    "answer": "If you made a successful payment but it's not reflecting, it may take 2-3 days for the billing system to adjust. Your plan validity will either be extended automatically, or the amount will be refunded. If it has been more than 3 days, please let me know so I can escalate this.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_003",
+    "topic": "Support",
+    "questions": [
+      "KYC failed",
+      "KYC not approved",
+      "KYC retry",
+      "GST KYC failed",
+      "Aadhaar KYC failed",
+      "Video KYC failed",
+      "My KYC verification failed"
+    ],
+    "answer": "If your KYC failed, it is often for two reasons: 1) For first-time users, it's usually a document issue (blurry photo, name mismatch). 2) For returning users, an old account may be blocking the new KYC. This requires an escalation to our senior team to review your application. Please provide the mobile number you registered with.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_004",
+    "topic": "Support",
+    "questions": [
+      "General calling issues",
+      "Calls not connecting",
+      "Call problem"
+    ],
+    "answer": "To troubleshoot calling, please first check the five conditions for calling to work (e.g., app installed, active SIM balance, stable internet, etc.). If it's still not working, the steps are different for incoming vs. outgoing calls.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_005",
+    "topic": "Support",
+    "questions": [
+      "Problem with incoming calls",
+      "Incoming calls failing",
+      "Cannot receive calls",
+      "Not receiving calls",
+      "Calls go to missed calls"
+    ],
+    "answer": "For incoming call issues, please check three things: 1. Check your phone's settings to see if 'Call Forwarding' is enabled, and if so, please remove it. 2. Ensure the Heyo number is not on your phone's 'block list'. 3. Go to the Heyo app and re-update your welcome message ('Settings' -> 'Call & Staff' -> 'Update').",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_006",
+    "topic": "Support",
+    "questions": [
+      "Problem with outgoing calls",
+      "Outgoing calls failing",
+      "Cannot make calls"
+    ],
+    "answer": "For outgoing call issues, this is often a network problem. Please try this: switch your phone's network to 2G, then back to 4G/5G, and restart your phone. This forces a network reset.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_007",
+    "topic": "Support",
+    "questions": [
+      "Problem with all calls",
+      "All calls failing",
+      "Both incoming and outgoing problem"
+    ],
+    "answer": "If both incoming and outgoing calls are failing, this points to one of the 5 core conditions. The most common issue is that your phone's SIM card does not match your 'Login Number' in the app, or your SIM does not have an active calling plan.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_008",
+    "topic": "Support",
+    "questions": [
+      "Notifications not working",
+      "Not getting alerts",
+      "No notification",
+      "Missed call notification"
+    ],
+    "answer": "If you are not receiving notifications, please check your phone's settings to ensure all notifications for the Heyo app are enabled. Also, check that your phone's 'battery optimization' or 'battery saver' is not restricting Heyo's background activity. If that fails, try logging out and back in.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_009",
+    "topic": "Support",
+    "questions": [
+      "How to check battery optimization",
+      "How to check battery saver"
+    ],
+    "answer": "You can usually find it in your phone's 'Settings' under 'Battery' or 'Battery and device care.' Look for 'Battery optimization' or 'Background usage limits' and make sure Heyo is set to 'Unrestricted' or 'Allowed' to run in the background.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_010",
+    "topic": "Support",
+    "questions": [
+      "OTP limit exceeded",
+      "Too many OTPs",
+      "Cannot get OTP"
+    ],
+    "answer": "If you are seeing an 'OTP limit exceeded' error, this is a temporary security measure. Please wait 24 hours, and the limit will automatically reset, allowing you to try logging in again. If it is still blocked after 24 hours, please let me know.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_011",
+    "topic": "Support",
+    "questions": [
+      "Link not clickable",
+      "Link not working",
+      "Cannot open link",
+      "Your link is broken",
+      "Copy link"
+    ],
+    "answer": "I'm sorry about that! Sometimes chat apps can make links unclickable. Please try tapping and holding on the link to copy it, and then paste it directly into your phone's browser. That almost always works.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_012",
+    "topic": "Support",
+    "questions": [
+      "Video KYC stuck",
+      "Video KYC not working",
+      "Camera permission for KYC"
+    ],
+    "answer": "If you are stuck on the Video KYC process, please ensure the Heyo app has all necessary permissions (camera, microphone, speaker) in your phone's settings. Also, please make sure you are in a space with adequate lighting.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_013",
+    "topic": "Support",
+    "questions": [
+      "How to check app permissions",
+      "Where are app permissions"
+    ],
+    "answer": "You can check this by going into your phone's main 'Settings', then finding 'Apps' or 'App Management,' selecting 'Heyo,' and then tapping on 'Permissions.' Please ensure 'Camera' and 'Microphone' are both set to 'Allow.'",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_014",
+    "topic": "Support",
+    "questions": [
+      "How long is my plan?",
+      "Subscription duration",
+      "30 days"
+    ],
+    "answer": "After you purchase a plan, your subscription is active for 30 days.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_015",
+    "topic": "Support",
+    "questions": [
+      "What are Heyo Credits?",
+      "What are credits used for?",
+      "1 credit = 1 rupee"
+    ],
+    "answer": "'Heyo Credits' are the platform’s internal currency, where 1 Credit = ₹1. They are used for your subscription renewals, plan upgrades, and for paying WhatsApp (WABA) conversation charges.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_016",
+    "topic": "Support",
+    "questions": [
+      "How to upgrade my plan?",
+      "How to downgrade?",
+      "Change plan",
+      "Switch plan",
+      "Can I downgrade?",
+      "Pro to Lite",
+      "Why can't I downgrade?"
+    ],
+    "answer": "You can change your plan anytime in the 'Plans & Invoice' section. Upgrades are applied immediately on a pro-rata basis. However, downgrading from a Pro plan to a Lite plan is not permitted, as it involves complex changes like removing IVR settings and re-assigning staff.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_017",
+    "topic": "Support",
+    "questions": [
+      "How to get invoice?",
+      "Download GST invoice",
+      "Billing history"
+    ],
+    "answer": "You can view and download all your past payment invoices directly from the 'Plans & Invoice' section in the Heyo app.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_018",
+    "topic": "Support",
+    "questions": [
+      "Where is my invoice?",
+      "Invoice not received",
+      "I need my GST invoice"
+    ],
+    "answer": "Invoices are typically generated within 24 hours of a successful payment and sent to your registered email. If it has been longer than that, please check your spam folder. You can also access all past invoices in the 'Plans &Invoice' section of the app.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_019",
+    "topic": "Support",
+    "questions": [
+      "How to get GST on invoice?",
+      "No GST on invoice",
+      "GST details"
+    ],
+    "answer": "GST is included in your invoice ONLY if your KYC was completed using a valid GST certificate AND you added your GST details in the app (Settings → Business Details) *before* making the payment. If details were added *after* payment, GST cannot be applied to that past invoice, but will apply to all future ones.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_020",
+    "topic": "Support",
+    "questions": [
+      "Truecaller is pending",
+      "Why is my Truecaller not active?",
+      "Truecaller activation time",
+      "What are the services offered in Truecaller?",
+      "What are the services offered in TC?",
+      "How does Truecaller work with Heyo?",
+      "Tell me about the Truecaller service",
+      "what are the capabilities of truecaller"
+    ],
+    "answer": "After you activate and pay for Truecaller, it can take 2-3 business days for your business name to be approved and updated in their global database. If it has been longer than 3 business days, please let me know so I can escalate it.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_021",
+    "topic": "Support",
+    "questions": [
+      "Cannot add staff",
+      "Error adding user",
+      "Add 0 users only",
+      "Staff add glitch"
+    ],
+    "answer": "If you see an error like 'You can add up to 0 users only,' it is likely a temporary glitch. Please try clearing the app cache and restarting the Heyo app.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_022",
+    "topic": "Support",
+    "questions": [
+      "How to clear cache",
+      "Where is app cache"
+    ],
+    "answer": "You can clear the cache by going to your phone's 'Settings' → 'Apps' → 'Heyo' → 'Storage' → 'Clear Cache.' After doing that, please restart the app.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_023",
+    "topic": "Support",
+    "questions": [
+      "WABA setup error wrong ID",
+      "WABA ID registered with another provider",
+      "Create new WABA ID"
+    ],
+    "answer": "If you see an error that your WABA ID is registered with another provider, here is the fix: You must uninstall and reinstall the Heyo app. Then, during the setup process, be sure to select 'Create New WABA ID' instead of choosing the existing one.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_024",
+    "topic": "Support",
+    "questions": [
+      "WABA setup rejected",
+      "Meta did not approve details",
+      "Name and website mismatch"
+    ],
+    "answer": "If Meta does not approve your details, it is very likely because your submitted Business Name does not strongly match the content and name on your submitted Website URL. Please try again with details that are clearly aligned.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_025",
+    "topic": "Support",
+    "questions": [
+      "WABA setup error too many codes",
+      "Too many invalid verification codes",
+      "Temporary block WABA"
+    ],
+    "answer": "If you see an error about too many invalid verification codes, please stop and wait for 24-48 hours. This is a temporary block from Meta. After waiting, you can try the setup process again.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_026",
+    "topic": "Support",
+    "questions": [
+      "WABA setup error Facebook API failed",
+      "WABA verification failed",
+      "WABA request could not be completed",
+      "Facebook verification failed"
+    ],
+    "answer": "Errors like 'Facebook API failed' or 'Verification Failed. Request Could not be completed' are usually temporary. Please wait for some time (e.g., 1-2 hours) and then try the setup process again.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_027",
+    "topic": "Support",
+    "questions": [
+      "WABA stuck in review",
+      "WABA pending setup",
+      "How long for WABA review?",
+      "72 hours"
+    ],
+    "answer": "If your setup screen is stuck or says 'under review,' this is a normal part of Meta's process. It can sometimes take up to 72 hours (3 days) for them to verify your business details. If it has been longer than 72 hours, please let me know.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_028",
+    "topic": "Support",
+    "questions": [
+      "WABA approval time",
+      "How long does WABA take?",
+      "WABA pending"
+    ],
+    "answer": "After you complete the setup steps, Meta (Facebook) typically takes approximately 12–24 hours to review and approve your new WABA account. If it has been longer than 24 hours, please let me know.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_029",
+    "topic": "Support",
+    "questions": [
+      "My WABA template was rejected",
+      "Why was my template rejected?",
+      "WABA template rejected"
+    ],
+    "answer": "Meta rejects templates for common reasons: 1. Spelling/grammar mistakes. 2. It's 'promotional' but wasn't tagged as 'Marketing'. 3. It mentions a restricted industry (loans, gambling). 4. Variables (like `{{1}}`) are unclear or badly formatted. For example, a 'sale' template submitted as 'Utility' will always be rejected.\n\nHere is a video guide on creating templates: https://www.youtube.com/watch?v=BG876G_2LR4",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_030",
+    "topic": "Support",
+    "questions": [
+      "Campaign failed credits refunded",
+      "Will I get my credits back?",
+      "WABA refund",
+      "Undelivered WABA messages"
+    ],
+    "answer": "Yes. If a campaign fails to send due to Meta's messaging limits, the cost for any undelivered messages is automatically refunded to your account as Heyo Credits within 2-3 hours.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_031",
+    "topic": "Support",
+    "questions": [
+      "How to avoid WABA ban",
+      "WABA policy",
+      "WABA rules"
+    ],
+    "answer": "To avoid a ban from Meta, you should always use your exact legal business name, have a valid website, follow all of Meta's policies, avoid restricted industries like gambling, and do not send excessive or spammy messages.\n\nWe have a video on this here: https://www.youtube.com/watch?v=BsozWkCxrus",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_032",
+    "topic": "Support",
+    "questions": [
+      "CRITICAL: Facebook Business Manager",
+      "FBM warning",
+      "Do not delete number from FBM",
+      "Do not change FBM"
+    ],
+    "answer": "This is critical: Do NOT delete your Heyo number from your Meta Business Manager (FBM) or make other changes without guidance from an expert. This action is irreversible and can cause permanent disruption to your WABA service.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_033",
+    "topic": "Support",
+    "questions": [
+      "WABA is confusing",
+      "Why are there so many steps?",
+      "This is too hard",
+      "Why Meta?"
+    ],
+    "answer": "I understand it can feel complex. Because WABA is an official business tool (not a personal app), Meta (Facebook) has many strict verification steps to prevent spam and protect users. It's a bit of a process, but I'm here to help you through it.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_034",
+    "topic": "Support",
+    "questions": [
+      "WABA message failed ecosystem restriction",
+      "Ecosystem restriction error",
+      "Meta blocked message"
+    ],
+    "answer": "If a message fails with an 'ecosystem restriction' error, it means Meta has blocked that specific message to maintain high-quality standards. Please review Meta's messaging policies to ensure your content is compliant.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_035",
+    "topic": "Support",
+    "questions": [
+      "WABA media failed to send",
+      "Cannot send image",
+      "File size limit",
+      "Unsupported file type"
+    ],
+    "answer": "Media files (like images or PDFs) may fail to send for a few reasons: 1. The file size is too large (try to keep it under 5MB). 2. It is an unsupported file type (use JPG or PDF). 3. There was a temporary technical issue. Please try compressing the file or using a different format.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_036",
+    "topic": "Support",
+    "questions": [
+      "WABA media URL not found",
+      "Media expired",
+      "WABA image error"
+    ],
+    "answer": "The 'Media URL not found' error usually means the media file (image/video) has expired on Meta's servers, as they restrict how long media is available. Please ask the sender to resend the file.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_037",
+    "topic": "Support",
+    "questions": [
+      "Cannot download WABA media",
+      "Cannot download image",
+      "WABA download failed"
+    ],
+    "answer": "If you cannot download images sent by customers, please check: 1. Your device has enough storage space. 2. You have a stable internet connection. 3. The Heyo app has permission to access storage in your phone's settings.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_038",
+    "topic": "Support",
+    "questions": [
+      "WABA notification but no message",
+      "Sync issue WABA",
+      "Chat not appearing"
+    ],
+    "answer": "If you receive a WhatsApp notification but don't see a new message, it's likely a sync issue. Please check your internet, and refresh the app by closing and reopening it. A restart of the app usually fixes this.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_039",
+    "topic": "Support",
+    "questions": [
+      "Cannot assign WABA chat",
+      "Chat assign failed",
+      "WABA permissions"
+    ],
+    "answer": "If you are unable to assign a chat, it may be because: 1. The chat is already assigned to someone. 2. There is a temporary sync issue (please refresh the app). 3. (For IVR) The staff member is not properly assigned to that department.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_040",
+    "topic": "Support",
+    "questions": [
+      "WABA cannot send messages",
+      "WABA messages failing",
+      "Why can't I send WABA?"
+    ],
+    "answer": "If you are unable to send WABA messages, please check these four things: 1. Is your WABA setup complete and verified? 2. Do you have enough Heyo Credits? 3. Are you within your daily messaging limit set by Meta? 4. Do you have a stable internet connection?",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_041",
+    "topic": "Support",
+    "questions": [
+      "My WABA chat screen is not loading",
+      "My WhatsApp screen is blank",
+      "My WABA chat won't load",
+      "WABA chat screen not loading",
+      "WhatsApp is blank",
+      "Chat won't load"
+    ],
+    "answer": "If your WhatsApp chat screen is not loading, please try these steps in order: 1. Ensure you have a stable internet connection. 2. Close and reopen the app to refresh. 3. Clear the app cache from your phone's settings. 4. Restart your device.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_042",
+    "topic": "Support",
+    "questions": [
+      "WABA analytics broken",
+      "WABA reports not updating",
+      "WABA insights not working"
+    ],
+    "answer": "If your WhatsApp usage insights are not displaying correctly, please try refreshing the app or logging out and back in. Note that insights may take 24 hours to update due to data sync delays from Meta. If it has been over 24 hours, please let me know.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_043",
+    "topic": "Support",
+    "questions": [
+      "WABA credits pending",
+      "Credits still pending on Meta",
+      "Payment gateway delay"
+    ],
+    "answer": "If your credits show as 'pending on Meta,' the transaction is still processing. This can take a few hours. If the status persists beyond 24 hours, it may indicate a delay at the payment gateway. Please let me know if it has been over 24 hours.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_044",
+    "topic": "Support",
+    "questions": [
+      "WABA restored but app says banned",
+      "Sync delay",
+      "Status not updated"
+    ],
+    "answer": "If your WABA account was banned and then restored by Meta, but the status isn't updated in the Heyo app, this is likely a sync delay. Please allow up to 24 hours for the system to refresh the status from Meta. If it's been over 24 hours, let me know.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_045",
+    "topic": "Support",
+    "questions": [
+      "Unverified business account",
+      "250 conversation limit",
+      "Display name pending"
+    ],
+    "answer": "When you first set up WABA, your account is 'Unverified.' This is the default stage. It means you are limited to 250 conversations per day, and your business name is only visible if the customer saves your number.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_046",
+    "topic": "Support",
+    "questions": [
+      "WABA display name rejected",
+      "Meta rejected my name",
+      "Resubmit display name"
+    ],
+    "answer": "If your display name is rejected by Meta, try resubmitting a name that clearly represents your business, matches your official documents/website, and does not contain special characters (like !) or generic terms (like 'India').",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_047",
+    "topic": "Support",
+    "questions": [
+      "My calls disconnect",
+      "My call status says busy",
+      "All numbers are busy when I call",
+      "My calls are server unreachable",
+      "It says invalid number when I call",
+      "Calls disconnect",
+      "Status busy",
+      "All numbers busy",
+      "Server unreachable",
+      "Invalid number"
+    ],
+    "answer": "These issues are usually caused by temporary network disruptions. Please try switching your phone's network to 2G, then back to 4G/5G, or just restarting your phone. If that fails, try clearing the Heyo app's cache.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_048",
+    "topic": "Support",
+    "questions": [
+      "Incoming calls disconnect",
+      "Calls drop immediately"
+    ],
+    "answer": "If incoming calls are disconnecting immediately, before you can answer, please try this: Go to 'Settings' → 'Call & Staff' and tap 'Update' on your welcome message. This often refreshes the connection.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_049",
+    "topic": "Support",
+    "questions": [
+      "Call routing not working",
+      "Sequential not working",
+      "Uniform not working"
+    ],
+    "answer": "If the call routing sequence isn't working, please try this: 1. Go to 'Manage Staff' and toggle the distribution method (e.g., from 'Sequential' to 'Uniform' and back again), then tap 'Update'. 2. Also, please ensure 'call availability' is turned on for all staff members.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_050",
+    "topic": "Support",
+    "questions": [
+      "Call says initializing",
+      "Call disconnects after initializing"
+    ],
+    "answer": "If a call shows 'Initializing, please wait' and then disconnects, please try clearing the cache of the Heyo app from your phone's settings.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_051",
+    "topic": "Support",
+    "questions": [
+      "No SIM detected",
+      "SIM error",
+      "App cannot find SIM"
+    ],
+    "answer": "If the app shows 'No SIM detected': 1. Ensure the SIM card is in the same device as the Heyo app. 2. Open your phone’s SIM card manager and confirm your phone number is correctly listed (it shouldn't be a placeholder).",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_052",
+    "topic": "Support",
+    "questions": [
+      "Call voice not clear",
+      "Bad call quality",
+      "Audio problem"
+    ],
+    "answer": "If the call voice is not clear, the first step is to clear the Heyo app's cache. If that doesn't help, it is almost always a local network issue. Please try making a call from a location with a stronger internet or mobile signal (like on Wi-Fi).",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_053",
+    "topic": "Support",
+    "questions": [
+      "Greeting message not playing",
+      "Why is my greeting skipped?",
+      "Repeat caller"
+    ],
+    "answer": "This is a feature! The greeting message is designed to play for first-time callers. If the same customer calls again within 1 hour, the greeting is skipped, and the call connects directly to the staff member who last spoke with them.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_054",
+    "topic": "Support",
+    "questions": [
+      "Why do I have to dial 0?",
+      "Dial 0 before Heyo number"
+    ],
+    "answer": "You must add a '0' before dialing a Heyo number because it is a virtual landline number. Just like any landline, it requires the '0' prefix when dialing from a mobile phone.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_055",
+    "topic": "Support",
+    "questions": [
+      "Can I own the number?",
+      "Can I buy the number?",
+      "Transfer number ownership"
+    ],
+    "answer": "No, ownership of the virtual number cannot be transferred to you. This is due to both telecom partner policies and technical limitations within the app.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_056",
+    "topic": "Support",
+    "questions": [
+      "I am not getting OTP",
+      "WhatsApp OTP",
+      "SMS not received",
+      "Verification code",
+      "Cannot get OTP",
+      "Can I get OTP on virtual number?",
+      "Receive SMS",
+      "Use number for Swiggy, Zomato, WhatsApp OTP"
+    ],
+    "answer": "This is a critical point: Heyo's virtual numbers are for calls and WABA chats only. They **cannot receive SMS messages**, so they cannot be used for receiving OTPs from any platform (like for a regular WhatsApp, Swiggy, or Zomato). You must use the WABA setup inside the Heyo app for WhatsApp.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_057",
+    "topic": "Support",
+    "questions": [
+      "How does subscription renewal work?",
+      "What happens on expiry date?",
+      "Auto-renew",
+      "Grace period",
+      "Payment failed",
+      "What happens when my plan expires?",
+      "Why can't I make calls?",
+      "Waiting period",
+      "All services stopped"
+    ],
+    "answer": "Here is the subscription lifecycle:\n1. **Grace Period (7 days):** If you miss your expiry date, you enter a 7-day Grace Period where outbound calls are restricted.\n2. **Waiting Period (21 days):** After the Grace Period, you enter a 21-day Waiting Period where all services are restricted.\n3. **Suspension (Day 28):** If no payment is made within 28 days of expiry, the account and virtual number are permanently suspended and cannot be recovered.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_058",
+    "topic": "Support",
+    "questions": [
+      "My subscription expired",
+      "How to reactivate my account after my plan expired?",
+      "How to reactivate",
+      "My Heyo subscription is suspended",
+      "My Heyo account is suspended due to payment",
+      "My account is suspended because my plan expired"
+    ],
+    "answer": "If your account is suspended, it's most likely due to an expired subscription. If your plan expired within the last 28 days, you can reactivate it by simply completing the renewal payment in the app. If it has been *over* 28 days, the account and number are permanently disabled.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_059",
+    "topic": "Support",
+    "questions": [
+      "Payment failed",
+      "Card was declined",
+      "How to retry payment",
+      "Payment issue"
+    ],
+    "answer": "If your subscription payment fails, your account will enter the 7-day Grace Period. To fix this, please go to 'Settings' → 'Plans & Invoice' to update your payment method and retry the payment.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_060",
+    "topic": "Support",
+    "questions": [
+      "One staff cannot make calls",
+      "Staff member cannot get calls",
+      "Staff calling issue"
+    ],
+    "answer": "If only one staff member has calling issues, please try this: 1. The Admin should try removing and re-adding that staff member. 2. The Staff member should confirm they are logging in with the correct number and that their SIM has an active recharge plan.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_061",
+    "topic": "Support",
+    "questions": [
+      "Greeting not playing for new callers",
+      "Greeting is skipped for everyone",
+      "Welcome message not working"
+    ],
+    "answer": "If the greeting message is not playing even for brand new callers (which is different from the 'repeat caller' feature), please try re-updating the message text and tap 'Update' again. Go to 'Settings' → 'Call & Staff' → 'Play Welcome Message & IVR', make a small change (like adding a space), and tap 'Update'.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_062",
+    "topic": "Support",
+    "questions": [
+      "I am unavailable but calls are still ringing",
+      "Availability not working",
+      "I set to unavailable"
+    ],
+    "answer": "If you've set your status to 'Unavailable' but your phone is still ringing, please try this: 1. Toggle your availability back to 'Available' and then to 'Unavailable' again. 2. Fully close and restart the Heyo app. This forces a re-sync with the server.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_063",
+    "topic": "Support",
+    "questions": [
+      "Staff cannot log in",
+      "Staff login problem",
+      "What number do I use to log in"
+    ],
+    "answer": "If a staff member cannot log in, please check two things: 1. They must be logging in with the **exact** number the Admin added for them. 2. They must have the Heyo app installed on that same phone. This is the most common reason for login failure.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_064",
+    "topic": "Support",
+    "questions": [
+      "WABA setup failed facebook business account banned",
+      "Meta appeal"
+    ],
+    "answer": "If your WABA setup fails because your parent Facebook Business account is banned, you must appeal this decision directly with Meta. We cannot influence Meta's decision-making or their appeal process. Here is the link to appeal: https://www.facebook.com/business-support-home",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_065",
+    "topic": "Support",
+    "questions": [
+      "WABA setup error number has existing whatsapp account",
+      "Unresolvable",
+      "Recirculated DID"
+    ],
+    "answer": "I'm sorry to hear that. This is a rare and unresolvable issue. It means the virtual number you were assigned was recently recycled and its old WABA account was not properly deleted. The only resolution is to process a refund, after which you can create a new account to be assigned a new, clean number. I am escalating this to my senior colleagues to help you with that process.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_066",
+    "topic": "Support",
+    "questions": [
+      "How to change WABA display name?",
+      "Can I change my WABA name?",
+      "Update WABA name"
+    ],
+    "answer": "This is a Meta (Facebook) policy: once your WABA display name is approved, it **cannot be changed or edited**. If you made a critical error, the only way to fix it may be to set up a new WABA account. I can get a specialist from my team to join the chat to discuss this, as it's a complex process. Just let me know.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_067",
+    "topic": "Support",
+    "questions": [
+      "WABA account banned",
+      "Meta banned me",
+      "Cannot send messages on WABA",
+      "WABA restricted",
+      "my WABA account is disabled",
+      "my WABA account is suspended"
+    ],
+    "answer": "If your WABA account was banned by Meta *after* setup, you will not be able to send messages. You must appeal this decision directly with Meta; we cannot intervene in this process. You can appeal here: https://www.facebook.com/business-support-home",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_068",
+    "topic": "Support",
+    "questions": [
+      "WABA campaign failed",
+      "Campaign error",
+      "Partial delivery",
+      "Why did my campaign fail?"
+    ],
+    "answer": "Campaigns can fail for several reasons: 1. Your contact list is in the wrong format. 2. You've hit Meta's daily/hourly marketing message limits. 3. Some recipients may have blocked you. 4. The list contains invalid numbers. 5. The message content violates Meta's policies.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_069",
+    "topic": "Support",
+    "questions": [
+      "Urgent help",
+      "I need live help",
+      "Emergency support",
+      "I need a human",
+      "connect with agent",
+      "connect me to agent",
+      "escalate"
+    ],
+    "answer": "I understand. I am escalating this to my senior colleagues immediately. They are available from 10 AM to 7 PM IST and will join this chat to investigate and get back to you as soon as possible.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_070",
+    "topic": "Triage",
+    "questions": [
+      "my account is suspended",
+      "my account is disabled",
+      "my acc is disabled"
+    ],
+    "answer": "I'm sorry to hear that. An account can be suspended for a few different reasons, such as an **expired subscription**, a **WABA policy issue from Meta**, or a **violation of Heyo's usage guidelines**. To find out the specific reason and get this sorted out, I am escalating this to my senior colleagues. They are available from 10 AM to 7 PM IST and will join this chat to investigate and get back to you as soon as possible.\n\nHere is a video that explains common reasons for account blocking: https://www.youtube.com/watch?v=BsozWkCxrus",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "support_071",
+    "topic": "Support",
+    "questions": [
+      "What are Heyo's usage guidelines?",
+      "Why was my account suspended by the audit team?",
+      "What is the reactivation form?",
+      "I need the reactivation form link",
+      "What is not allowed on Heyo?",
+      "What are the prohibited business categories?",
+      "My account was suspended for a violation"
+    ],
+    "answer": "Heyo's services must be used for permitted business communication. Our audit team may suspend accounts for violations.\n\n**Prohibited uses include:**\n* Cold calling or spamming.\n* Prank calls, scams, or using brand names without authorization.\n* **Prohibited Business Categories:** Financial services (loans, recovery), unauthorized medicines, drugs, alcohol, tobacco, weapons, adult content, or anything illegal in India.\n\nIf your account was suspended by our audit team for a violation, the only way to resolve it is to fill out the official reactivation form here: https://docs.google.com/forms/d/e/1FAIpQLSeCHo75NuHP-RPKako8950JqrG3dpGFkAYq6l6c8DnxA0cBLA\n\nWe have two videos on this: \n1. Do's and Don'ts: https://www.youtube.com/watch?v=mpv7QKMTQQY\n2. How to Not Get Blocked: https://www.youtube.com/watch?v=BsozWkCxrus",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "campaign_001",
+    "topic": "Campaign",
+    "questions": [
+      "Get KYC assistance"
+    ],
+    "answer": "Hi there! I see you're ready to complete the final setup step, which is your KYC. I'm happy to help with that. \n\nCompleting your KYC is what assigns your new virtual number, so it's an important step. We have a great 10-minute video that walks you through the entire signup and KYC process from start to finish. \n\nYou can watch it here: https://www.youtube.com/watch?v=q8S3e0ZlNB8\n\nIf you get stuck at any point while following the video, just let me know, and I can get a specialist from my team to join this chat and help you.",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "campaign_002",
+    "topic": "Campaign",
+    "questions": [
+      "Review plan options"
+    ],
+    "answer": "I'm happy to help! It looks like your KYC is complete and you're ready for the final step: activating a plan. \n\nTo help you decide, we have a great 10-minute recorded demo that covers all the features of our Lite and Pro plans: https://www.youtube.com/watch?v=q8S3e0ZlNB8\n\nIf you have specific questions about which plan is right for you, I can also get a specialist from my team to join this chat to help. \n\nWould you prefer to watch the video first, or should I get a specialist for you now?",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "campaign_003",
+    "topic": "Campaign",
+    "questions": [
+      "Get WABA setup guide"
+    ],
+    "answer": "I can definitely help with your WABA (WhatsApp Business API) setup. As a new customer, you have two great options to get this done:\n\n1.Click **Live Demo:** You can join our live daily demo (2 PM, Mon-Fri). An expert will walk you through the WABA setup and answer your questions. You can book your slot here: https://www.heyophone.com/heyo-daily-demo\n\n2.Click **Recorded Video:** If you prefer to do it on your own time, this 10-minute video walks you through the entire process: https://www.youtube.com/watch?v=q8S3e0ZlNB8\n\nI'd recommend the live demo if you have questions, but the video is faster if you're comfortable with the steps!",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "campaign_004",
+    "topic": "Campaign",
+    "questions": [
+      "Learn WABA strategy"
+    ],
+    "answer": "Absolutely. The best way to learn strategies to get the *most* value out of your WABA features is to join our live daily demo. You can ask questions directly to our Heyo expert about running campaigns and managing chats. The demo is held daily at 2 PM (Mon-Fri). You can book your slot here: https://www.heyophone.com/heyo-daily-demo\n\nIf you'd just like a refresher, we also have this 10-minute recorded demo that covers WABA strategies: https://www.youtube.com/watch?v=q8S3e0ZlNB8",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "objection_001",
+    "topic": "Objection",
+    "questions": [
+      "That's too expensive",
+      "That costs too much",
+      "Your price is too high",
+      "Your competitor is cheaper"
+    ],
+    "answer": "I understand the concern about pricing. Our plans are designed to provide a lot of value for growing teams. For example, the ₹600/mo Pro plan includes 5 users and a professional IVR. We also have a 10-minute demo video that shows all the features in action, which might help clarify the value. Would you like the link for that?",
+    "metadata": {}
+  },
+  {
+    "chunk_id": "csat_001_trigger",
+    "topic": "System - CSAT Trigger",
+    "questions": [
+      "Thanks",
+      "Thank you",
+      "You're very helpful",
+      "Great, thanks",
+      "Perfect, thank you",
+      "OK thanks",
+      "All set, thanks",
+      "That solved it"
+    ],
+    "answer": "You're very welcome! I'm glad I could help. \n\nWould you mind rating your experience with me today on a scale of 1 (Poor) to 5 (Excellent)?",
+    "metadata": {
+      "type": "system",
+      "purpose": "To be triggered by user's positive confirmation."
+    }
+  },
+  {
+    "chunk_id": "sales_004_live_demo",
+    "topic": "Sales - Daily Live Demo (Zoom)",
+    "questions": [
+      "what is the link for the daily demo?",
+      "how do I join the 2pm demo?",
+      "send me the zoom link for the demo",
+      "I want the live demo",
+      "I missed the demo, what is the link?"
+    ],
+    "answer": "Absolutely! Our live daily demo happens Monday-Friday at 2 PM IST. You can join it directly using this Zoom link: https://us06web.zoom.us/j/87068226338",
+    "metadata": {
+      "type": "sales"
+    }
+  },
+  {
+    "chunk_id": "sales_005_demo_triage",
+    "topic": "Sales - Demo Clarification (Honeypot)",
+    "questions": [
+      "what is a demo?",
+      "can I see a demo?",
+      "I want a demo",
+      "how does the demo work?",
+      "I want the demo link",
+      "ok send me the demo link",
+      "Live demo"
+    ],
+    "answer": "We have two great options! Are you looking for our **10-minute recorded video** (which you can watch anytime) or our **live daily demo** (which happens at 2 PM IST on Zoom)?",
+    "metadata": {
+      "type": "sales_honeypot"
+    }
+  },
+  {
+    "chunk_id": "video_001_walkthrough",
+    "topic": "Video - Full App Walkthrough",
+    "questions": [
+      "how do I get started with heyo?",
+      "can you show me how to set up my heyo account?",
+      "what are all the features of heyo?",
+      "I am a new user, what do I do?",
+      "do you have a complete guide for the heyo app?"
+    ],
+    "answer": "Welcome to Heyo! We have a perfect step-by-step video guide that walks you through everything from setting up your account and getting your virtual number to using features like IVR and WhatsApp. It's a great place to start!\n\nYou can watch it here: https://www.youtube.com/watch?v=q8S3e0ZlNB8",
+    "metadata": {
+      "type": "video_guide"
+    }
+  },
+  {
+    "chunk_id": "video_002_waba_intro",
+    "topic": "Video - Intro to WABA",
+    "questions": [
+      "how do I use WhatsApp on Heyo?",
+      "how does the heyo whatsapp feature work?",
+      "how do I use heyo for business growth?",
+      "show me how to use heyo whatsapp"
+    ],
+    "answer": "I can definitely help with that. Our WhatsApp Business (WABA) feature is a great way to grow your business. We have a video that explains step-by-step how to get started, create message templates, and manage your customer chats.\n\nHere's the guide: https://www.youtube.com/watch?v=iEpi8R9lmq0",
+    "metadata": {
+      "type": "video_guide"
+    }
+  },
+  {
+    "chunk_id": "video_003_waba_pricing",
+    "topic": "Video - WABA Campaign Pricing",
+    "questions": [
+      "what is the difference between utility and marketing message pricing?",
+      "how does whatsapp conversation pricing work?"
+    ],
+    "answer": "That's a great question, as the pricing is based on 'conversations.' We have a short video that explains exactly how WhatsApp campaign pricing works, including the difference between 'Utility' and 'Marketing' messages.\n\nYou can watch it here: https://www.youtube.com/watch?v=6ARc7vl28mU",
+    "metadata": {
+      "type": "video_guide"
+    }
+  },
+  {
+    "chunk_id": "video_004_account_blocked",
+    "topic": "Video - How to Not Get Blocked",
+    "questions": [
+      "how do I avoid getting my account blocked?",
+      "why did my account get suspended?",
+      "what are the rules for not getting blocked?",
+      "what do I do if my account is blocked?",
+      "how to reactivate my heyo account?"
+    ],
+    "answer": "It's really important to follow the rules to keep your account in good standing. This video explains the main reasons accounts get blocked (like cold-calling or high-risk business types) and what you can do to avoid it.\n\nYou can watch it here: https://www.youtube.com/watch?v=BsozWkCxrus",
+    "metadata": {
+      "type": "video_guide"
+    }
+  },
+  {
+    "chunk_id": "video_005_waba_bulk_campaign",
+    "topic": "Video - How to Run Bulk WABA Campaigns",
+    "questions": [
+      "how do I upload a csv for a campaign?",
+      "show me how to run a bulk campaign in the heyo app"
+    ],
+    "answer": "We have a quick tutorial that shows you exactly how to run a bulk WhatsApp campaign, including how to upload your contacts using a CSV file and schedule your message.\n\nHere is the step-by-step video: https://www.youtube.com/watch?v=rYl-dZ60Wyg",
+    "metadata": {
+      "type": "video_guide"
+    }
+  },
+  {
+    "chunk_id": "video_006_waba_templates",
+    "topic": "Video - How to Create WABA Templates",
+    "questions": [
+      "how do I create a custom whatsapp template?",
+      "how to get my whatsapp template approved?"
+    ],
+    "answer": "Creating custom templates is key to starting conversations on WhatsApp. I have a great video that shows you how to create your own templates, add variables, and include buttons or images.\n\nYou can watch it here: https://www.youtube.com/watch?v=BG876G_2LR4",
+    "metadata": {
+      "type": "video_guide"
+    }
+  },
+  {
+    "chunk_id": "video_007_ivr_setup",
+    "topic": "Video - How to Set Up IVR",
+    "questions": [
+      "how do I use the ivr feature?",
+      "how to set up press 1 for sales, press 2 for support?",
+      "how to add departments for calls?",
+      "is ivr included in my plan?"
+    ],
+    "answer": "Setting up IVR (like 'Press 1 for Sales') is a great way to manage your calls. This video shows you exactly how to enable it in the app, set up your departments, and assign your staff to them. (Please note: this feature is available on our Pro plan!)\n\nHere's the guide: https://www.youtube.com/watch?v=XRDIB4Hxbe4",
+    "metadata": {
+      "type": "video_guide"
+    }
+  },
+  {
+    "chunk_id": "video_008_dos_donts",
+    "topic": "Video - App Do's and Don'ts",
+    "questions": [
+      "what are the rules for using heyo?",
+      "what are the heyo phone app dos and donts?",
+      "am I allowed to do cold calling?"
+    ],
+    "answer": "That's a very important question! We have a quick video that covers the main 'Do's and Don'ts' for using the Heyo app, especially regarding calls and allowed business types, to make sure you stay compliant.\n\nYou can watch it here: https://www.youtube.com/watch?v=mpv7QKMTQQY",
+    "metadata": {
+      "type": "video_guide"
+    }
+  }
+]

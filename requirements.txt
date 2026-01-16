@@ -1,0 +1,28 @@
+# Intent Ingestion Pipeline - Dependencies
+# 
+# Install with: pip install -r requirements.txt
+
+# Vector Database Client
+qdrant-client>=1.9.0
+
+# Embedding Models (sentence-transformers)
+sentence-transformers>=2.2.0
+
+# Core ML dependencies (installed with sentence-transformers)
+torch>=2.0.0
+transformers>=4.35.0
+
+# Numerical computing
+numpy>=1.24.0
+
+# Environment variable management
+python-dotenv>=1.0.0
+
+# Optional: For OpenAI embeddings (if you prefer over sentence-transformers)
+# openai>=1.0.0
+
+# Optional: For async operations
+# aiohttp>=3.9.0
+
+# Optional: For better progress bars
+tqdm>=4.65.0
