@@ -6,7 +6,10 @@ that integrates with Parlant to search the Qdrant knowledge base
 and return relevant answers for user queries.
 """
 
+import asyncio
 import logging
+import time
+
 import parlant.sdk as p
 from parlant.sdk import ToolContext, ToolResult
 from qdrant_client import QdrantClient
@@ -75,11 +78,11 @@ class RAGRetriever:
         
         formatted_results = [
             {
-                "score": r.score,
+                "score": round(r.score, 3),
                 "topic": r.payload.get("topic", "Unknown"),
                 "chunk_id": r.payload.get("chunk_id", ""),
                 "questions": r.payload.get("questions", []),
-                "answer": r.payload.get("answer", "No answer available")
+                "answer": r.payload.get("answer", "No answer available"),
             }
             for r in results
         ]
@@ -90,6 +93,34 @@ class RAGRetriever:
 
 # Initialize retriever as singleton
 _retriever = RAGRetriever()
+
+
+HIGH_CONFIDENCE_THRESHOLD = 0.78
+MEDIUM_CONFIDENCE_THRESHOLD = 0.6
+LOW_CONFIDENCE_THRESHOLD = 0.45
+TOOL_TIMEOUT_SECONDS = 3.0
+
+
+def _confidence_band(score: float) -> str:
+    if score >= HIGH_CONFIDENCE_THRESHOLD:
+        return "high"
+    if score >= MEDIUM_CONFIDENCE_THRESHOLD:
+        return "medium"
+    if score >= LOW_CONFIDENCE_THRESHOLD:
+        return "low"
+    return "none"
+
+
+def _extract_trace_id(context: ToolContext) -> str | None:
+    interaction = getattr(context, "interaction", None)
+    for obj in (context, interaction):
+        if not obj:
+            continue
+        for attr in ("trace_id", "traceId", "traceID"):
+            value = getattr(obj, attr, None)
+            if value:
+                return value
+    return None
 
 
 @p.tool
@@ -114,36 +145,65 @@ async def search_knowledge_base(
         top_k: Number of results to retrieve (default: 5)
         
     Returns:
-        ToolResult with formatted knowledge base results
+        ToolResult with structured knowledge base results and confidence metadata
     """
-    results = _retriever.search(query, top_k=top_k)
-    
-    if not results:
-        return ToolResult(data="No relevant information found in the knowledge base.")
-    
-    # Format results for the LLM
-    output_parts = []
-    
-    for i, result in enumerate(results, 1):
-        score = result["score"]
-        topic = result["topic"]
-        answer = result["answer"]
-        questions = result["questions"]
-        
-        # Only include results with reasonable relevance
-        if score < 0.3:
-            continue
-            
-        # Format each result
-        questions_str = ", ".join(questions[:3]) if questions else "N/A"
-        output_parts.append(
-            f"**Result {i}** (Relevance: {score:.2f})\n"
-            f"- Topic: {topic}\n"
-            f"- Related queries: {questions_str}\n"
-            f"- Answer: {answer}"
+    start = time.time()
+    trace_id = _extract_trace_id(context)
+    logger.info("[TOOL] search_knowledge_base called trace_id=%s", trace_id)
+
+    try:
+        results = await asyncio.wait_for(
+            asyncio.to_thread(_retriever.search, query, top_k),
+            timeout=TOOL_TIMEOUT_SECONDS,
         )
-    
-    if not output_parts:
-        return ToolResult(data="No sufficiently relevant results found. The query may be outside the knowledge base scope.")
-    
-    return ToolResult(data="\n\n---\n\n".join(output_parts))
+    except asyncio.TimeoutError:
+        return ToolResult(
+            data={
+                "status": "timeout",
+                "confidence_band": "none",
+                "results": [],
+                "query": query,
+                "trace_id": trace_id,
+            }
+        )
+    except Exception as exc:
+        logger.exception("[TOOL] search_knowledge_base failed: %s", exc)
+        return ToolResult(
+            data={
+                "status": "error",
+                "confidence_band": "none",
+                "results": [],
+                "query": query,
+                "trace_id": trace_id,
+                "error": str(exc),
+            }
+        )
+
+    if not results:
+        return ToolResult(
+            data={
+                "status": "no_results",
+                "confidence_band": "none",
+                "results": [],
+                "query": query,
+                "trace_id": trace_id,
+            }
+        )
+
+    top_score = max(r["score"] for r in results)
+    band = _confidence_band(top_score)
+    filtered = [r for r in results if r["score"] >= LOW_CONFIDENCE_THRESHOLD]
+    if band in {"none", "low"}:
+        filtered = []
+
+    return ToolResult(
+        data={
+            "status": "found" if filtered else "low_confidence",
+            "confidence_band": band,
+            "results": filtered,
+            "query": query,
+            "top_score": top_score,
+            "trace_id": trace_id,
+            "timing_ms": round((time.time() - start) * 1000),
+        }
+    )

@@ -11,6 +11,7 @@ This module implements a proper Parlant retriever that:
 3. Lets the agent synthesize answers from retrieved context
 """
 
+import asyncio
 import logging
 import time
 from typing import Optional
@@ -90,7 +91,7 @@ class KnowledgeRetriever:
         logger.info(f"[RETRIEVER] ✓ TOTAL initialization time: {time.time() - total_start:.2f}s")
         logger.info("=" * 60)
     
-    def search(self, query: str, top_k: int = 5, min_score: float = 0.3) -> list[dict]:
+    def search(self, query: str, top_k: int = 5, min_score: float = 0.0) -> list[dict]:
         """
         Search Qdrant for relevant knowledge entries.
         
@@ -142,6 +143,57 @@ class KnowledgeRetriever:
 # Global singleton instance
 _retriever = KnowledgeRetriever()
 
+# Confidence bands for intent-level similarity
+HIGH_CONFIDENCE_THRESHOLD = 0.78
+MEDIUM_CONFIDENCE_THRESHOLD = 0.6
+LOW_CONFIDENCE_THRESHOLD = 0.45
+
+# Timeout guard to avoid blocking response generation
+RETRIEVER_TIMEOUT_SECONDS = 3.0
+
+
+def _confidence_band(score: float) -> str:
+    if score >= HIGH_CONFIDENCE_THRESHOLD:
+        return "high"
+    if score >= MEDIUM_CONFIDENCE_THRESHOLD:
+        return "medium"
+    if score >= LOW_CONFIDENCE_THRESHOLD:
+        return "low"
+    return "none"
+
+
+def _extract_trace_id(context: p.RetrieverContext) -> str | None:
+    interaction = getattr(context, "interaction", None)
+    for obj in (context, interaction):
+        if not obj:
+            continue
+        for attr in ("trace_id", "traceId", "traceID"):
+            value = getattr(obj, attr, None)
+            if value:
+                return value
+    return None
+
+
+def _extract_journey_info(context: p.RetrieverContext) -> tuple[str | None, str | None]:
+    interaction = getattr(context, "interaction", None)
+    journey_id = None
+    journey_state = None
+    for obj in (interaction, context):
+        if not obj:
+            continue
+        journey_id = journey_id or getattr(obj, "journey_id", None) or getattr(obj, "journeyId", None)
+        journey_state = journey_state or getattr(obj, "journey_state", None) or getattr(
+            obj, "journeyState", None
+        )
+        journey = getattr(obj, "journey", None)
+        if journey:
+            journey_id = journey_id or getattr(journey, "id", None) or getattr(journey, "name", None)
+            journey_state = journey_state or getattr(journey, "state", None)
+    return journey_id, journey_state
+
+
+_journey_state_cache: dict[str, str] = {}
+
 
 async def heyo_knowledge_retriever(context: p.RetrieverContext) -> p.RetrieverResult:
     """
@@ -163,7 +215,23 @@ async def heyo_knowledge_retriever(context: p.RetrieverContext) -> p.RetrieverRe
         RetrieverResult with knowledge entries or None if no relevant data
     """
     retriever_start = time.time()
-    logger.info("[PARLANT-RETRIEVER] >>> heyo_knowledge_retriever CALLED <<<")
+    trace_id = _extract_trace_id(context)
+    journey_id, journey_state = _extract_journey_info(context)
+    if trace_id and journey_id and journey_state:
+        cache_key = f"{trace_id}:{journey_id}"
+        previous_state = _journey_state_cache.get(cache_key)
+        if previous_state != journey_state:
+            _journey_state_cache[cache_key] = journey_state
+            logger.info(
+                "[PARLANT-JOURNEY] Transition trace_id=%s journey=%s state=%s",
+                trace_id,
+                journey_id,
+                journey_state,
+            )
+    logger.info(
+        "[PARLANT-RETRIEVER] >>> heyo_knowledge_retriever CALLED <<< trace_id=%s",
+        trace_id,
+    )
     
     # Get the last customer message as the query
     last_message = context.interaction.last_customer_message
@@ -174,27 +242,92 @@ async def heyo_knowledge_retriever(context: p.RetrieverContext) -> p.RetrieverRe
     query = last_message.content
     logger.info(f"[PARLANT-RETRIEVER] Query: '{query[:100]}...'")
     
-    # Search knowledge base
+    # Search knowledge base in a worker thread to avoid blocking the event loop
     logger.info("[PARLANT-RETRIEVER] Calling _retriever.search()...")
-    results = _retriever.search(query, top_k=5, min_score=0.3)
-    
-    if not results:
-        # No relevant knowledge found - agent should acknowledge this
-        logger.info(f"[PARLANT-RETRIEVER] No results found, completed in {time.time() - retriever_start:.3f}s")
+    try:
+        results = await asyncio.wait_for(
+            asyncio.to_thread(_retriever.search, query, 5, 0.0),
+            timeout=RETRIEVER_TIMEOUT_SECONDS,
+        )
+    except asyncio.TimeoutError:
+        logger.warning(
+            "[PARLANT-RETRIEVER] Timeout after %.2fs; returning no_results",
+            RETRIEVER_TIMEOUT_SECONDS,
+        )
         return p.RetrieverResult(
             data={
-                "status": "no_results",
-                "message": "No relevant information found in knowledge base for this query."
+                "status": "timeout",
+                "confidence_band": "none",
+                "knowledge_entries": [],
+                "query": query,
+                "trace_id": trace_id,
+            }
+        )
+    except Exception as exc:
+        logger.exception("[PARLANT-RETRIEVER] Retrieval failed: %s", exc)
+        return p.RetrieverResult(
+            data={
+                "status": "error",
+                "confidence_band": "none",
+                "knowledge_entries": [],
+                "query": query,
+                "trace_id": trace_id,
+                "error": str(exc),
             }
         )
     
+    if not results:
+        # No relevant knowledge found - agent should acknowledge this
+        logger.info(
+            "[PARLANT-RETRIEVER] No results found, completed in %.3fs",
+            time.time() - retriever_start,
+        )
+        return p.RetrieverResult(
+            data={
+                "status": "no_results",
+                "confidence_band": "none",
+                "knowledge_entries": [],
+                "query": query,
+                "trace_id": trace_id,
+            }
+        )
+
+    top_score = max(r["confidence"] for r in results)
+    band = _confidence_band(top_score)
+    if band in {"none", "low"}:
+        logger.info(
+            "[PARLANT-RETRIEVER] Low confidence (%.3f), returning no_results",
+            top_score,
+        )
+        return p.RetrieverResult(
+            data={
+                "status": "low_confidence",
+                "confidence_band": band,
+                "knowledge_entries": [],
+                "query": query,
+                "top_score": top_score,
+                "trace_id": trace_id,
+            }
+        )
+
+    # Only surface entries that meet the low-confidence threshold
+    results = [r for r in results if r["confidence"] >= LOW_CONFIDENCE_THRESHOLD]
+    
     # Return structured knowledge data
     # The agent will synthesize this into a natural response
-    logger.info(f"[PARLANT-RETRIEVER] Returning {len(results)} entries, completed in {time.time() - retriever_start:.3f}s")
+    logger.info(
+        "[PARLANT-RETRIEVER] Returning %d entries (%s), completed in %.3fs",
+        len(results),
+        band,
+        time.time() - retriever_start,
+    )
     return p.RetrieverResult(
         data={
             "status": "found",
+            "confidence_band": band,
             "knowledge_entries": results,
-            "query": query
+            "query": query,
+            "top_score": top_score,
+            "trace_id": trace_id,
         }
     )
