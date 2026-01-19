@@ -164,7 +164,432 @@
         "agent_intention_condition": null,
         "internal_action": null
       }
+    },
+    {
+      "id": "3be055109e610cd24be85d79f24d3bd5",
+      "creation_utc": "2026-01-19T05:29:49.236524+00:00",
+      "version": "3.1.2",
+      "properties": {
+        "continuous": false,
+        "customer_dependent_action_data": {
+          "is_customer_dependent": false,
+          "customer_action": "",
+          "agent_action": ""
+        },
+        "agent_intention_condition": null,
+        "internal_action": null
+      }
+    },
+    {
+      "id": "f1223f3a45f2c574ee77941b2c15e6f0",
+      "creation_utc": "2026-01-19T05:29:49.737138+00:00",
+      "version": "3.1.2",
+      "properties": {
+        "continuous": false,
+        "customer_dependent_action_data": {
+          "is_customer_dependent": false,
+          "customer_action": "",
+          "agent_action": ""
+        },
+        "agent_intention_condition": null,
+        "internal_action": null
+      }
     }
   ],
-  "journey_evaluations_3.1.2": []
+  "journey_evaluations_3.1.2": [
+    {
+      "id": "4b7640cd39fd3160b30eb1a0d23ce74f",
+      "creation_utc": "2026-01-19T05:30:05.267952+00:00",
+      "version": "3.1.2",
+      "node_properties": {
+        "PLcuBNTw0Y": {
+          "continuous": null,
+          "customer_dependent_action_data": {
+            "is_customer_dependent": false,
+            "customer_action": "",
+            "agent_action": ""
+          },
+          "agent_intention_condition": null,
+          "internal_action": null,
+          "tool_running_only": false,
+          "journey_node": {
+            "reachable_follow_ups": [
+              {
+                "condition": "The agent hasn't expressed sympathy and asked the customer to share their account details, and the customer hasn't shared their account details yet",
+                "path": [
+                  "2"
+                ]
+              },
+              {
+                "condition": "The agent expressed sympathy and asked the customer to share their account details, and the user is asking for a refund and the tool check_refund_eligibility hasn't been used yet",
+                "path": [
+                  "2",
+                  "4"
+                ]
+              },
+              {
+                "condition": "The agent expressed sympathy and asked the customer to share their account details, and the user provides their account details and the agent hasn't looked into the issue and proposed a solution yet",
+                "path": [
+                  "2",
+                  "3"
+                ]
+              }
+            ]
+          }
+        },
+        "UtprAB70dV": {
+          "continuous": null,
+          "customer_dependent_action_data": {
+            "is_customer_dependent": true,
+            "customer_action": "The customer shares their account details",
+            "agent_action": "The agent expresses sympathy and asks the customer to share their account details."
+          },
+          "agent_intention_condition": null,
+          "internal_action": "I’m sorry you’re experiencing an issue. Can you share your account details so I can assist you further?",
+          "tool_running_only": false,
+          "journey_node": {
+            "reachable_follow_ups": [
+              {
+                "condition": "The user is asking for a refund and the tool check_refund_eligibility hasn't been used yet",
+                "path": [
+                  "4"
+                ]
+              },
+              {
+                "condition": "The user provides their account details and the agent hasn't looked into the issue and proposed a solution yet",
+                "path": [
+                  "3"
+                ]
+              }
+            ]
+          }
+        },
+        "KmqzaqMieH": {
+          "continuous": null,
+          "customer_dependent_action_data": {
+            "is_customer_dependent": false,
+            "customer_action": "",
+            "agent_action": ""
+          },
+          "agent_intention_condition": null,
+          "internal_action": "I’ll look into your issue and propose one solution. If the solution doesn’t help, I can escalate the matter.",
+          "tool_running_only": false,
+          "journey_node": {
+            "reachable_follow_ups": [
+              {
+                "condition": "The first solution failed to solve the user's problem and the agent hasn't used the tool initiate_human_handoff yet",
+                "path": [
+                  "5"
+                ]
+              }
+            ]
+          }
+        },
+        "PqkwuPo7AH": {
+          "continuous": null,
+          "customer_dependent_action_data": {
+            "is_customer_dependent": false,
+            "customer_action": "",
+            "agent_action": ""
+          },
+          "agent_intention_condition": null,
+          "internal_action": null,
+          "tool_running_only": true,
+          "journey_node": {
+            "reachable_follow_ups": [
+              {
+                "condition": "The agent hasn't checked the refund eligibility and asked the customer if they would like to proceed or share more context",
+                "path": [
+                  "6"
+                ]
+              },
+              {
+                "condition": "The agent checked the refund eligibility and asked the customer if they would like to proceed or share more context, and the customer indicates whether they would like the agent to proceed or share more context.",
+                "path": [
+                  "6",
+                  "None"
+                ]
+              }
+            ]
+          }
+        },
+        "rqpKN2iRjR": {
+          "continuous": null,
+          "customer_dependent_action_data": {
+            "is_customer_dependent": false,
+            "customer_action": "",
+            "agent_action": ""
+          },
+          "agent_intention_condition": null,
+          "internal_action": null,
+          "tool_running_only": true,
+          "journey_node": {
+            "reachable_follow_ups": [
+              {
+                "condition": "The agent hasn't escalated the issue to a specialist and asked the customer if they would like to add any more details while connecting them",
+                "path": [
+                  "7"
+                ]
+              },
+              {
+                "condition": "The agent escalated the issue to a specialist and asked the customer if they would like to add any more details while connecting them and the customer provided additional details",
+                "path": [
+                  "7",
+                  "None"
+                ]
+              }
+            ]
+          }
+        },
+        "7462ZICBxq": {
+          "continuous": null,
+          "customer_dependent_action_data": {
+            "is_customer_dependent": true,
+            "customer_action": "The customer indicates whether they would like the agent to proceed or share more context.",
+            "agent_action": "The agent checks the refund eligibility and asks the customer if they would like to proceed or share more context."
+          },
+          "agent_intention_condition": null,
+          "internal_action": null,
+          "tool_running_only": false,
+          "journey_node": {
+            "reachable_follow_ups": [
+              {
+                "condition": "The customer indicates whether they would like the agent to proceed or share more context.",
+                "path": [
+                  "None"
+                ]
+              }
+            ]
+          }
+        },
+        "reI7v9fewh": {
+          "continuous": null,
+          "customer_dependent_action_data": {
+            "is_customer_dependent": true,
+            "customer_action": "The customer provided additional details",
+            "agent_action": "The agent escalated the issue to a specialist and asked the customer if they would like to add any more details while connecting them."
+          },
+          "agent_intention_condition": null,
+          "internal_action": "I’ve escalated your issue to a specialist. Would you like to add any more details while we connect you?",
+          "tool_running_only": false,
+          "journey_node": {
+            "reachable_follow_ups": [
+              {
+                "condition": "The customer provided additional details",
+                "path": [
+                  "None"
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "edge_properties": {}
+    },
+    {
+      "id": "4ab29f15c58074b06e8ad7e4342191da",
+      "creation_utc": "2026-01-19T05:30:06.769639+00:00",
+      "version": "3.1.2",
+      "node_properties": {
+        "iWCPYrXGfm": {
+          "continuous": null,
+          "customer_dependent_action_data": {
+            "is_customer_dependent": false,
+            "customer_action": "",
+            "agent_action": ""
+          },
+          "agent_intention_condition": null,
+          "internal_action": null,
+          "tool_running_only": false,
+          "journey_node": {
+            "reachable_follow_ups": [
+              {
+                "condition": "The agent hasn't welcomed the customer and asked if they would like to start with KYC verification or WABA registration",
+                "path": [
+                  "2"
+                ]
+              },
+              {
+                "condition": "The agent welcomed the customer and asked if they would like to start with KYC verification or WABA registration, and the user chooses WABA registration and the customer hasn't provided the professional phone number to use for WhatsApp yet",
+                "path": [
+                  "2",
+                  "4"
+                ]
+              },
+              {
+                "condition": "The agent welcomed the customer and asked if they would like to start with KYC verification or WABA registration, and the user chooses WABA registration and the customer provided the professional phone number to use for WhatsApp but hasn't been informed that the number will be used for WABA registration and next steps will be shared",
+                "path": [
+                  "2",
+                  "4",
+                  "6"
+                ]
+              },
+              {
+                "condition": "The agent welcomed the customer and asked if they would like to start with KYC verification or WABA registration, and the user chooses KYC verification and the customer hasn't shared their official ID details yet",
+                "path": [
+                  "2",
+                  "3"
+                ]
+              },
+              {
+                "condition": "The agent welcomed the customer and asked if they would like to start with KYC verification or WABA registration, and the user chooses KYC verification and the customer shared their official ID details and the tool verify_id_tool hasn't been used yet",
+                "path": [
+                  "2",
+                  "3",
+                  "5"
+                ]
+              }
+            ]
+          }
+        },
+        "BXNyjE9b6v": {
+          "continuous": null,
+          "customer_dependent_action_data": {
+            "is_customer_dependent": true,
+            "customer_action": "The customer indicates whether they would like to start with KYC verification or WABA registration.",
+            "agent_action": "The agent welcomes the customer and asks if they would like to start with KYC verification or WABA registration."
+          },
+          "agent_intention_condition": null,
+          "internal_action": null,
+          "tool_running_only": false,
+          "journey_node": {
+            "reachable_follow_ups": [
+              {
+                "condition": "The user chooses WABA registration and the customer hasn't provided the professional phone number to use for WhatsApp yet",
+                "path": [
+                  "4"
+                ]
+              },
+              {
+                "condition": "The user chooses WABA registration and the customer provided the professional phone number to use for WhatsApp but hasn't been informed that the number will be used for WABA registration and next steps will be shared",
+                "path": [
+                  "4",
+                  "6"
+                ]
+              },
+              {
+                "condition": "The user chooses KYC verification and the customer hasn't shared their official ID details yet",
+                "path": [
+                  "3"
+                ]
+              },
+              {
+                "condition": "The user chooses KYC verification and the customer shared their official ID details and the tool verify_id_tool hasn't been used yet",
+                "path": [
+                  "3",
+                  "5"
+                ]
+              }
+            ]
+          }
+        },
+        "7OW1dlW5sw": {
+          "continuous": null,
+          "customer_dependent_action_data": {
+            "is_customer_dependent": true,
+            "customer_action": "The customer shares their official ID details",
+            "agent_action": "The agent requests the customer to share their official ID details to proceed with KYC."
+          },
+          "agent_intention_condition": null,
+          "internal_action": null,
+          "tool_running_only": false,
+          "journey_node": {
+            "reachable_follow_ups": [
+              {
+                "condition": "The user provides an identity document and the tool verify_id_tool hasn't been used yet",
+                "path": [
+                  "5"
+                ]
+              }
+            ]
+          }
+        },
+        "5lHvBaUyow": {
+          "continuous": null,
+          "customer_dependent_action_data": {
+            "is_customer_dependent": true,
+            "customer_action": "The customer provides the professional phone number to use for WhatsApp",
+            "agent_action": "The agent asks what professional phone number should be used for WhatsApp"
+          },
+          "agent_intention_condition": null,
+          "internal_action": null,
+          "tool_running_only": false,
+          "journey_node": {
+            "reachable_follow_ups": [
+              {
+                "condition": "The customer hasn't been informed that the number will be used for WABA registration and next steps will be shared",
+                "path": [
+                  "6"
+                ]
+              }
+            ]
+          }
+        },
+        "XNl0KA7Rqb": {
+          "continuous": null,
+          "customer_dependent_action_data": {
+            "is_customer_dependent": false,
+            "customer_action": "",
+            "agent_action": ""
+          },
+          "agent_intention_condition": null,
+          "internal_action": null,
+          "tool_running_only": true,
+          "journey_node": {
+            "reachable_follow_ups": [
+              {
+                "condition": "The agent hasn't provided the app configuration tutorial link yet",
+                "path": [
+                  "7"
+                ]
+              }
+            ]
+          }
+        },
+        "qS4ju8wkmr": {
+          "continuous": null,
+          "customer_dependent_action_data": {
+            "is_customer_dependent": false,
+            "customer_action": "",
+            "agent_action": ""
+          },
+          "agent_intention_condition": null,
+          "internal_action": "Great. I will use the professional phone number you provided for WABA registration and share the next steps.",
+          "tool_running_only": false,
+          "journey_node": {
+            "reachable_follow_ups": [
+              {
+                "condition": "The agent informed the customer that they will use that number for WABA registration and share next steps.",
+                "path": [
+                  "None"
+                ]
+              }
+            ]
+          }
+        },
+        "OMYUEx0LJY": {
+          "continuous": null,
+          "customer_dependent_action_data": {
+            "is_customer_dependent": false,
+            "customer_action": "",
+            "agent_action": ""
+          },
+          "agent_intention_condition": null,
+          "internal_action": null,
+          "tool_running_only": false,
+          "journey_node": {
+            "reachable_follow_ups": [
+              {
+                "condition": "The agent provided the app configuration tutorial link",
+                "path": [
+                  "None"
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "edge_properties": {}
+    }
+  ]
 }

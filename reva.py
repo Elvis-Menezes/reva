@@ -3,6 +3,7 @@ import asyncio
 import parlant.sdk as p
 from dotenv import load_dotenv
 
+from journeys_tools import create_onboarding_journey, create_support_journey
 from knowledge_retriever import heyo_knowledge_retriever
 
 load_dotenv()  # Load environment variables from .env file
@@ -87,13 +88,9 @@ async def main():
             )
         )
 
-        await agent.create_guideline(
-        condition="the retriever returns high confidence knowledge for the question",
-        action=(
-            "Answer directly and authoritatively using ONLY the retrieved knowledge entries. "
-            "Do not add facts that are not present in the retrieved knowledge."
-        )
-    )
+        # Journeys are only for user-facing SOPs.
+        await create_onboarding_journey(agent)
+        await create_support_journey(agent)
         
 if __name__ == "__main__":
     asyncio.run(main())
