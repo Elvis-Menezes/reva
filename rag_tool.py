@@ -178,7 +178,7 @@ async def search_knowledge_base(
                 "error": str(exc),
             }
         )
-
+    
     if not results:
         return ToolResult(
             data={

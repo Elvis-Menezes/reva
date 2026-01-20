@@ -1,28 +1,52 @@
-# Intent Ingestion Pipeline - Dependencies
-# 
+# Reva Chatbot - Dependencies
+# ============================
 # Install with: pip install -r requirements.txt
 
-# Vector Database Client
-qdrant-client>=1.9.0
+# =============================================================================
+# PARLANT SDK & BACKEND
+# =============================================================================
+# parlant-sdk  # Uncomment if available on PyPI, otherwise install locally
 
-# Embedding Models (sentence-transformers)
+# =============================================================================
+# VECTOR DATABASE & EMBEDDINGS
+# =============================================================================
+qdrant-client>=1.9.0
 sentence-transformers>=2.2.0
 
-# Core ML dependencies (installed with sentence-transformers)
+# Core ML dependencies
 torch>=2.0.0
 transformers>=4.35.0
-
-# Numerical computing
 numpy>=1.24.0
 
+# =============================================================================
+# API & SERVICES
+# =============================================================================
+# OpenAI API (for NLP service and Vision API)
+openai>=1.0.0
+
+# FastAPI for bill upload service
+fastapi>=0.109.0
+uvicorn>=0.27.0
+python-multipart>=0.0.6
+
+# HTTP client for API calls
+requests>=2.31.0
+httpx>=0.26.0
+
+# =============================================================================
+# UTILITIES
+# =============================================================================
 # Environment variable management
 python-dotenv>=1.0.0
 
-# Optional: For OpenAI embeddings (if you prefer over sentence-transformers)
-# openai>=1.0.0
+# Image handling
+Pillow>=10.0.0
 
-# Optional: For async operations
-# aiohttp>=3.9.0
-
-# Optional: For better progress bars
+# Progress bars
 tqdm>=4.65.0
+
+# =============================================================================
+# OPTIONAL: MONITORING & OBSERVABILITY
+# =============================================================================
+# sentry-sdk>=1.39.0  # Error tracking
+# posthog>=3.0.0      # Analytics

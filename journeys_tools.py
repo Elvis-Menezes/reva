@@ -1,6 +1,11 @@
 import hashlib
+import logging
 
 import parlant.sdk as p
+
+from bill_processor import process_bill_for_refund
+
+logger = logging.getLogger(__name__)
 
 
 def _stable_id(*parts: str) -> str:
@@ -68,7 +73,7 @@ async def initiate_human_handoff(
     )
 
 
-@p.tool
+@p.tool(consequential=True)
 async def check_refund_eligibility(
     context: p.ToolContext,
     account_id: str | None = None,
@@ -77,7 +82,8 @@ async def check_refund_eligibility(
     reason: str | None = None,
 ) -> p.ToolResult:
     """
-    Deterministic refund eligibility check based on provided metadata.
+    Checks refund eligibility based on account and order metadata.
+    Marked as consequential because refund decisions have business impact.
     """
     missing = [
         name
@@ -112,6 +118,46 @@ async def check_refund_eligibility(
     )
 
 
+@p.tool(consequential=True)
+async def process_bill_image(
+    context: p.ToolContext,
+    bill_image_url: str,
+) -> p.ToolResult:
+    """
+    Uses OpenAI Vision to analyze the bill and extract transaction details
+    for refund verification. Marked as consequential because it affects
+    refund decisions.
+    
+    Args:
+        context: Parlant tool context (automatically provided)
+        bill_image_url: The file_id or URL of the uploaded bill image
+    
+    Returns:
+        ToolResult with bill data and refund eligibility assessment
+    """
+    logger.info(f"[TOOL] process_bill_image called with bill_image_url={bill_image_url}")
+
+    if not bill_image_url or not bill_image_url.strip():
+        return p.ToolResult(
+            data={
+                "status": "invalid_input",
+                "error": "missing_bill_url",
+                "message": "Please provide the file_id or URL of your bill.",
+                "retryable": True,
+            },
+            metadata={"vision_agent_trace": "invalid_input"}
+        )
+
+    # Process the bill (runs OpenAI Vision extraction + eligibility check)
+    result = process_bill_for_refund(bill_image_url.strip())
+
+    logger.info(f"[TOOL] process_bill_image result: status={result.get('status')}")
+    return p.ToolResult(
+        data=result,
+        metadata={"vision_agent_trace": "success" if result.get("status") == "processed" else "failed"}
+    )
+
+
 async def create_onboarding_journey(agent: p.Agent) -> None:
     onboarding = await agent.create_journey(
         title="Onboarding & Setup",
@@ -133,12 +179,13 @@ async def create_onboarding_journey(agent: p.Agent) -> None:
     t3_verify = await t2_kyc.target.transition_to(
         tool_state=verify_id_tool,
         condition="The user provides an identity document",
+        tool_instruction="Verify the identity document provided by the customer.",
     )
 
     await t3_verify.target.transition_to(
         chat_state=(
             "Thanks! Your verification is complete. "
-            "Here is the app configuration tutorial link."
+            
         )
     )
 
@@ -176,6 +223,7 @@ async def create_support_journey(agent: p.Agent) -> None:
     t3_handoff = await t2_solve.target.transition_to(
         tool_state=initiate_human_handoff,
         condition="The first solution failed to solve the user's problem",
+        tool_instruction="Escalate to a human agent because automated solutions did not work.",
     )
 
     await t3_handoff.target.transition_to(
@@ -188,11 +236,25 @@ async def create_support_journey(agent: p.Agent) -> None:
     t2_refund = await t1.target.transition_to(
         tool_state=check_refund_eligibility,
         condition="The user is asking for a refund",
+        tool_instruction="Check the refund eligibility for this customer's order.",
     )
 
-    await t2_refund.target.transition_to(
+    t3_refund_chat = await t2_refund.target.transition_to(
         chat_state=(
             "I checked the refund eligibility. "
-            "Would you like me to proceed or share more context?"
+            "If you have a bill or invoice image, please upload it and share the file_id. "
+            "Otherwise, let me know how you'd like to proceed."
         )
+    )
+
+    # Bill image processing path
+    t4_bill = await t3_refund_chat.target.transition_to(
+        tool_state=process_bill_image,
+        condition="The user provides a bill URL or image link",
+        tool_instruction="Verify the bill provided by the customer using vision analysis.",
+    )
+
+    await t4_bill.target.transition_to(
+        chat_state="If the bill is eligible, confirm the refund. Otherwise, explain why.",
+        condition="The vision tool has completed the analysis",
     )
